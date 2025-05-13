@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tailwindcss -i ./assests/index.css -o ./dist/output.css --minify"
+    "build": "tailwindcss -i ./assests/css/index.css -o ./assests/css/output.css --minify"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
