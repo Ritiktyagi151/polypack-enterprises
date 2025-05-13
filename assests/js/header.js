@@ -1,8 +1,4 @@
 
-    function toggleMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('-translate-x-full');
-    }
 
   function toggleDropdown(id, button) {
     const dropdown = document.getElementById(id);
@@ -22,5 +18,7 @@
   
   function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('transition-transform');
+    menu.classList.toggle('duration-300');
     menu.classList.toggle('-translate-x-full');
   }
