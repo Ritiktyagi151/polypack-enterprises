@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+    href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+
+  <title>PolyPack Enterprises</title>
+  <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #navbar-header {
+            position: sticky !important;
+            top: 0;
+            z-index: 50;
+            width: 100%;
+            background-color: #fff;
+            /* Ensure background is set */
+        }
+    </style>
+</head>
+
+<body>
+
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!--NAV SECTION END HERE..-->
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-gallery-banner.jpg" alt="gallery  Banner"
+      class="w-full h-auto object-cover max-w-full">
+  </div>
+
+  <!-- gallery section start here.. -->
+  <section class="my-section my-section2   gallery-section"
+    style="background-image: url('assests/images/backgrounds/3.jpg');">
+    <div class="container mx-auto px-4">
+
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 px-2 md:px-16 py-8 md:py-12">
+        <!-- Gallery Item 1 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/1-13.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/1-13.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 1"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="project-block-one p-1 cursor-pointer  group"
+          onclick="openModal('assests/new-images/images/gallery/1-20.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box   overflow-hidden">
+              <img src="assests/new-images/images/gallery/1-20.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 2"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/1-20.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/1-20.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 3"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/3-11.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/3-11.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 4"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/4-6.jpg')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/4-6.jpg"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 5"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/4-9.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/4-9.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 6"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/4-15.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/4-15.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 7"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/6-6.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/6-6.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 8"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/6-8.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/6-8.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 9"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 10 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/7-3.jpg')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/7-3.jpg"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 10"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 11 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/8-4.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/8-4.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 11"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 12 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/8-6-1.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/8-6-1.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 12"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 13 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/8-print.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/8-print.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 13"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 14 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/9-1.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/9-1.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 14"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 15 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/9-2.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/9-2.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 15"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 16 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/11-3.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/11-3.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 16"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 17 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/Screenshot-2023-01-04-183703.jpg')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/Screenshot-2023-01-04-183703.jpg"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 17"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 18 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/Untitled-design-27.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/Untitled-design-27.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 18"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 19 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/Untitled-design-35.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/Untitled-design-35.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 19"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 20 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/Untitled-design-37.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/Untitled-design-37.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 20"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 21 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/Untitled-design-38.png')">
+          <div
+            class="inner-box border-2 border-gray-300 bg-white transition duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/Untitled-design-38.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 21"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 22 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/zyro-image-82.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/zyro-image-82.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 22"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 23 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/WhatsApp-Image-2022-11-03-at-3.0-removebg-preview-1.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/WhatsApp-Image-2022-11-03-at-3.0-removebg-preview-1.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 23"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gallery Item 24 -->
+        <div class="project-block-one p-1 cursor-pointer group"
+          onclick="openModal('assests/new-images/images/gallery/zyro-image-97.png')">
+          <div
+            class="inner-box border-2 border-gray-300 transition bg-white duration-300 group-hover:border-orange-500">
+            <figure class="image-box overflow-hidden">
+              <img src="assests/new-images/images/gallery/zyro-image-97.png"
+                class="w-full h-48 object-contain transition duration-300 group-hover:scale-105" alt="Gallery image 24"
+                loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gallery section end here.. -->
+
+  <!-- Image Modal/Lightbox -->
+  <div id="imageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 hidden">
+    <div class="relative max-w-4xl w-full p-4">
+      <button onclick="closeModal()"
+        class="absolute -top-12 right-0 text-white text-3xl hover:text-orange-500 transition">&times;</button>
+      <div class="flex justify-between items-center absolute top-1/2 w-full -translate-y-1/2 px-4">
+        <button onclick="navigateImage(-1)"
+          class="bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-orange-500 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button onclick="navigateImage(1)"
+          class="bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-orange-500 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <img id="modalImage" class="w-full max-h-[80vh] object-contain" src="" alt="Enlarged view">
+      <p id="imageCaption" class="text-white text-center mt-2"></p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/gallery-img-viewer.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+</body>

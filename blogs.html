@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+    href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assests/css/styless.css">
+  <title>PolyPack Enterprises</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!-- Other content -->
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarHeader = document.getElementById('navbar-header');
+        navbarHeader.innerHTML = data;
+
+        // Force reflow to ensure sticky positioning is applied
+        navbarHeader.offsetHeight; // Trigger reflow
+        navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <!--NAV SECTION END HERE..-->
+
+
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-blog-banner.jpg" alt="blog  Banner"
+      class="w-full h-auto object-cover max-w-full">
+  </div>
+
+
+
+  <!-- Blog Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header with Animation -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 relative inline-block group">
+
+          <span
+            class="absolute -bottom-2 left-0 w-full h-2 bg-orange-400 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">“Smart, Sustainable, and Strong — Shaping the Future of
+          Packaging.”
+
+        </p>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogContainer">
+        <!-- Blog Card 1 -->
+        <div
+          class="blog-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assests/new-images/images/blog/199942799-568100876-Baking Packaging Supplies Near You.png"
+              alt="Blog image" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div
+              class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              New</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+              <span>April 17, 2025</span>
+              <span class="mx-2">•</span>
+              <span>5 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">A Guide to Find Best Baking Packaging Supplies Near You
+            </h3>
+            <p class="text-gray-600 mb-4">We will go into every aspect of bakery packaging and look at a variety of
+              possibilities to suit your....</p>
+            <button data-blog="1" class="read-more-btn text-orange-500 font-semibold inline-flex items-center group">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div
+          class="blog-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assests/new-images/images/blog/1804507724-Untitled design.png" alt="Blog image"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div
+              class="absolute top-4 left-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              Popular</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+              <span>March 28, 2025</span>
+              <span class="mx-2">•</span>
+              <span>8 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">The Global Market for Eco-Friendly Paper Box Products....
+            </h3>
+            <p class="text-gray-600 mb-4">At Polypack Enterprises we take pride in offering a diverse range of
+              eco-friendly paper products..</p>
+            <button data-blog="2" class="read-more-btn text-orange-500 font-semibold inline-flex items-center group">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div
+          class="blog-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assests/new-images/images/blog/blog1.jpg" alt="Blog image"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div
+              class="absolute top-4 left-4 bg-orange-400 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              Trending</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+              <span>February 15, 2025</span>
+              <span class="mx-2">•</span>
+              <span>6 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">The Global Challenge of Disposable Food Containers..
+            </h3>
+            <p class="text-gray-600 mb-4">In today s fast-paced world, convenience often reigns supreme. One consequence
+              of this ...</p>
+            <button data-blog="3" class="read-more-btn text-orange-500 font-semibold inline-flex items-center group">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div
+          class="blog-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assests/new-images/images/blog/blog5.jpg" alt="Blog image"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div
+              class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              Featured</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+              <span>Jan 22, 2025</span>
+              <span class="mx-2">•</span>
+              <span>7 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Making the Switch Why Polypack Paper Products are a Smart
+              Choice for Sustainability..</h3>
+            <p class="text-gray-600 mb-4">In a world where sustainability is now the watchword, companies and consumers
+              alike are reassessing...</p>
+            <button data-blog="4" class="read-more-btn text-orange-500 font-semibold inline-flex items-center group">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div
+          class="blog-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assests/new-images/images/blog/938011832-cake packaging boxes.png" alt="Blog image"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div
+              class="absolute top-4 left-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              Hot</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+              <span>Dec 18, 2024</span>
+              <span class="mx-2">•</span>
+              <span>9 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Why Paper Boxes are the Future of Food Packaging..</h3>
+            <p class="text-gray-600 mb-4">Remember the days of soggy takeout containers and flimsy plastic boxes
+              struggling...</p>
+            <button data-blog="5" class="read-more-btn text-orange-500 font-semibold inline-flex items-center group">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+        <div
+          class="blog-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assests/new-images/images/blog/1929252348-36057755.png" alt="Blog image"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div
+              class="absolute top-4 left-4 bg-orange-400 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              Updated</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+              <span>Nov 5, 2024</span>
+              <span class="mx-2">•</span>
+              <span>10 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Moulding Container Manufacturer Polypack Enterprises
+              Leading the Way..</h3>
+            <p class="text-gray-600 mb-4">The fast-growing need for moulding containers has made itself ..</p>
+            <button data-blog="6" class="read-more-btn text-orange-500 font-semibold inline-flex items-center group">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating CTA -->
+      <!-- <div class="mt-16 text-center">
+        <button id="ctaButton"
+          class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 float-animation">
+          View All Articles
+          <span class="ml-2 inline-block">→</span>
+        </button>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Blog Popup -->
+  <div id="blogPopup" class="blog-popup fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4">
+    <div class="popup-content bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="relative">
+        <button id="closePopup"
+          class="absolute top-4 right-4 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition-colors shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div class="h-auto md:h-96 w-full bg-orange-100 overflow-hidden">
+          <img id="popupImage" src="" alt="Blog image" class="w-full h-full object-contain">
+        </div>
+
+        <div class="p-6 md:p-8">
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <span id="popupDate">June 12, 2023</span>
+            <span class="mx-2">•</span>
+            <span id="popupReadTime">5 min read</span>
+            <span class="mx-2">•</span>
+            <span id="popupCategory"
+              class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-semibold">Design</span>
+          </div>
+
+          <h2 id="popupTitle" class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Future of Web Design</h2>
+
+          <div id="popupContent" class="prose max-w-none text-gray-700">
+            <!-- Content will be inserted here by JavaScript -->
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-gray-200">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img id="authorImage" class="h-10 hidden w-10 rounded-full" src="" alt="">
+              </div>
+              <div class="ml-3">
+                <p id="authorName" class="text-sm font-medium text-gray-900"></p>
+                <p class="text-sm text-gray-500"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/getQuote.js"></script>
+  <script src="assests/js/bogs.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+</body>

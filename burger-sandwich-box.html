@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png" href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title> PolyPack Enterprises</title>
+  <style>
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!-- Other content -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarHeader = document.getElementById('navbar-header');
+        navbarHeader.innerHTML = data;
+
+        // Force reflow to ensure sticky positioning is applied
+        navbarHeader.offsetHeight; // Trigger reflow
+        navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <!--NAV SECTION END HERE..-->
+
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-noodle-banner.jpg" alt="paper boxes "
+      class="w-full h-auto object-contain max-w-full">
+  </div>
+
+  <!-- burgar and sandwich box-start here -->
+  <div class="font-poppins bg-orange-50">
+
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Burger and Sandwich Boxes</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              Eco-friendly, sturdy Burger and Sandwich Boxes designed to keep your food fresh while reducing
+              environmental
+              impact.
+              Perfect for restaurants, bakeries, and food delivery services.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <img src="https://m.media-amazon.com/images/I/61LAzvWzQLL.jpg" alt="Premium Paper Boxes for Food Packaging"
+              class="rounded-lg h-96 shadow-xl w-full  max-w-lg mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- burgar and sandwich box-start here -->
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="lg:w-1/2">
+            <img src="assests/new-images/images/products/Burger-and-Sandwich-Boxes.png" alt="Burger & Sandwich Boxes"
+              class="rounded-lg shadow-md w-full">
+          </div>
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Technical Product Specifications</h2>
+
+            <div class="overflow-x-auto rounded-lg shadow-sm">
+              <table class="specification-table">
+                <thead>
+                  <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Material Used</td>
+                    <td>Food-grade virgin Paperboard, Kraft Paper, Corrugated Paper</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Box Sizes Available</td>
+                    <td>Small (250ml), Medium (500ml), Large (750ml), Custom Sizes Available</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Coating Type</td>
+                    <td>Greaseproof, Moisture-Resistant, PE/PLA Coating (Optional)</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Printing Technology</td>
+                    <td>Flexographic, Offset & Digital Printing</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Benefits</td>
+                    <td>Eco-Friendly, Sturdy, Recyclable, Biodegradable, Leakproof</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Usage Applications</td>
+                    <td>Takeaway & Delivery, Fast Food Chains, Cafés, Restaurants, Street Food Packaging</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Leakproof Design</td>
+                    <td>Yes, with greaseproof and moisture-resistant coating options</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Customization</td>
+                    <td>Logo, Branding, Custom Prints, Die-Cut Handles, Window Cut</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Quality Certification</td>
+                    <td>ISO, FSC, FDA, BIS, FSSAI certified</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 mt-6">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center">
+                Chat with us
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <div class="prose max-w-none">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">About the Product</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              A Sustainable and Practical Solution in Food Packaging: Burger and Sandwich Boxes
+              Packaging is very important in the food industry in questions of safety, hygiene, and presentation. For
+              fast
+              food items like burgers and sandwiches, the right packaging helps maintain food quality, prevent spillage,
+              and maximize enjoyment by the consumer. Burger and sandwich boxes are thus much in vogue as a sustainable
+              and functional option for food businesses. These boxes are helping to keep a food product intact, and
+              giving
+              something back to nature.
+            </p>
+
+            <h3 class="text-2xl font-bold text-dark mb-4">Importance of Burger and Sandwich Boxes</h3>
+            <p class="text-lg leading-relaxed mb-6">
+              <a href="https://www.polypackenterprises.com/paper-boxes-for-food-packaging.php"
+                class="text-primary hover:underline">Burger and sandwich boxes</a> are made so that they protect and
+              maintain the food's freshness and appeal. Unlike plastic wraps or paper bags, these tough boxes insulate
+              the
+              product against sogginess and leaks. Food packaging boxes work to either serve dine-in, or be taken away
+              or
+              delivered while still deciphering the structure and taste of the food.
+            </p>
+
+            <h3 class="text-2xl font-bold text-dark mb-4">Characteristics of Quality Burger and Sandwich Boxes</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="text-xl font-bold text-primary mb-3">Durable and Strong</h4>
+                <p class="text-gray-700">
+                  The strength of the material used in burger and sandwich boxes has to be such that one may envisage
+                  with
+                  it the food being squished or deformed.
+                </p>
+              </div>
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="text-xl font-bold text-primary mb-3">Grease-proof Coating</h4>
+                <p class="text-gray-700">
+                  Many types of boxes come with a coating that is resistant to grease, thus preventing oil or sauce from
+                  leaking.
+                </p>
+              </div>
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="text-xl font-bold text-primary mb-3">Eco-Friendly Material</h4>
+                <p class="text-gray-700">
+                  Most of the food packaging companies are now adopting biodegradable or fully recyclable materials for
+                  food boxes.
+                </p>
+              </div>
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="text-xl font-bold text-primary mb-3">Customized Printing</h4>
+                <p class="text-gray-700">
+                  Businesses can customize these boxes with logos, branding, print, or special designs for promoting
+                  their
+                  visibility.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-dark mb-4">Advantages of the Burger and Sandwich Boxes</h3>
+            <p class="text-lg leading-relaxed mb-6">
+              Burger and sandwich boxes deliver security, hygiene, and
+              ecological benefits that help food businesses. These boxes give an alluring look to the meal and help the
+              fresh quality of the foods and not let them leak. Made from biodegradable and recyclable materials, these
+              boxes help reduce plastic while assisting nature. Their sturdy construction is ideal for takeout and
+              delivery while permitting enough room for indelible branding. Bulk buying of high-quality burger sandwich
+              boxes means higher customer satisfaction and environmental-friendly packaging.
+            </p>
+
+            <h3 class="text-2xl font-bold text-dark mb-4">Reasons Businesses Should Choose Eco-Friendly Food Packaging
+            </h3>
+            <p class="text-lg leading-relaxed">
+              With the increasing awareness of environmental concerns, business houses are now switching to sustainable
+              packaging options. The old plastic containers take hundreds of years to decompose and add pollution to the
+              environment. On the other hand, biodegradable and recyclable burger boxes and sandwich boxes are good at
+              reducing waste and promoting a greener planet.
+              <br><br>
+              Poly Pack Enterprises is your true companion in supplying all high-quality eco-friendly
+              burger-and-sandwich
+              boxes. Dedicated to the concept of sustainability, it has a versatile range of durable bio compostable and
+              customizable packaging solutions that meet the food industry's changing requirements. It is the company to
+              turn to for innovation and sustainability in packaging for fresh food and ecological responsibility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Cards Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <!-- Burger Box -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Burger  Sandwich Box/4-6-2.jpg" alt="Burger Box"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">Burger Box</h3>
+              <p class="text-gray-600 mb-4">Keep your delicious burgers secure and mess-free with this convenient
+                packaging solution.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Sandwich Box -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Burger  Sandwich Box/7-3-1.jpg" alt="Sandwich Box"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">Sandwich Box</h3>
+              <p class="text-gray-600 mb-4">Convenient and compact packaging for keeping your sandwiches fresh and ready
+                to enjoy.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- burgar and sandwich box-end here -->
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/paper-product.js"></script>
+</body>

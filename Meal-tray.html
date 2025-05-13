@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+        href="assests/images/extra img/polypack-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assests/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title> PolyPack Enterprises</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #navbar-header {
+            position: sticky !important;
+            top: 0;
+            z-index: 50;
+            width: 100%;
+            background-color: #fff;
+            /* Ensure background is set */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--NAV SECTION START HERE..-->
+    <div id="navbar-header"></div>
+    <!--NAV SECTION END HERE..-->
+
+    <div class="w-full">
+        <img src="" alt="Baking tray" class="w-full h-auto object-contain max-w-full">
+    </div>
+
+
+
+    <!-- meal tray start here -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#EA580C',  // Orange-600
+                        secondary: '#C2410C', // Orange-700
+                        accent: '#F97316',   // Orange-500
+                        light: '#FFEDD5',    // Orange-50
+                        dark: '#9A3412',     // Orange-800
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .spec-table tr:nth-child(even) {
+            background-color: #FFEDD5;
+            /* Orange-50 */
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <div class="font-poppins bg-orange-50">
+        <!-- Hero Section -->
+        <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+                        <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+                            Premium <span class="text-primary">Meal Trays</span>
+                        </h1>
+                        <p class="text-lg text-gray-700 mb-8">
+                            High-quality, compartmentalized meal trays designed for takeaway services, catering
+                            businesses, and meal delivery. Perfect for keeping food fresh, organized and spill-proof.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/919891257954"
+                                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                                Chat on WhatsApp
+                            </a>
+                            <a href="tel:+919891257954"
+                                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+                        <img src="assests/new-images/images/products/Meal-Tray.png" alt="Premium meal trays"
+                            class="rounded-lg shadow-xl w-full h-80 max-w-lg mx-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Product Specifications</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200 spec-table">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col"
+                                        class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                                        Feature</th>
+                                    <th scope="col"
+                                        class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                                        Details</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material Used</td>
+                                    <td class="px-6 py-4 text-gray-700">Food-grade PP (Polypropylene), PET, Aluminum,
+                                        Kraft Paper, Bagasse</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Sizes Available
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">2-Compartment, 3-Compartment, 4-Compartment,
+                                        5-Compartment, Custom Sizes Available</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Coating Type</td>
+                                    <td class="px-6 py-4 text-gray-700">Leakproof, Greaseproof, Microwave-Safe, PE/PLA
+                                        Coating</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing
+                                        Technology</td>
+                                    <td class="px-6 py-4 text-gray-700">Plain or Custom Printed with Branding</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Benefits</td>
+                                    <td class="px-6 py-4 text-gray-700">Sturdy, Leakproof, Heat-Resistant, Disposable &
+                                        Recyclable</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Usage Applications
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">Takeaway Meals, Airline Catering, Meal Delivery,
+                                        Restaurant & Cafeteria Use</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Leakproof Design
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">Yes, with Secure Lids and Moisture-Resistant
+                                        Features</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Customization</td>
+                                    <td class="px-6 py-4 text-gray-700">Logo, Branding, Custom Colors, and Shapes
+                                        Available</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Quality
+                                        Certification</td>
+                                    <td class="px-6 py-4 text-gray-700">ISO, FSC, FDA, BIS, FSSAI Certified</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Product Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About Our Meal Trays</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="prose max-w-none text-gray-700">
+                    <p class="mb-6">
+                        Even though meal trays sound like a small piece of equipment, a meal tray is a significant part
+                        of packaging when feeding people. Meal trays organize the serving and delivery of their meals in
+                        easy, neat, hygienic form. They provide portion control in eating, easy-to-carry convenience,
+                        and green packaging meant for takeaway services, catering businesses, and meal delivery
+                        services. Meal trays are designed for various compartments that help in keeping food items
+                        separate, fresh, and spill-proof.
+                    </p>
+
+                    <p class="mb-6">
+                        Today's busy lives have transformed meal trays into a strong solution for ready-to-serve food in
+                        homes and offices, especially for restaurant, cloud-kitchen, and corporate catering services, at
+                        home and during travel. Lightweight construction and durability coupled with recyclability make
+                        such meal trays quite popular among commercial setups and consumers alike.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Meal Tray Types We Offer</h3>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">2 CP Meal Tray with Lid</h4>
+                    <p class="mb-4">
+                        A tray with compartments that helps serve a combination of meals or snacks by keeping different
+                        food in each compartment. The attached lid keeps the meal fresh as well as ensures cleanliness
+                        as it is spill-proof during travelling.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">3 CP Meal Tray With Lid</h4>
+                    <p class="mb-4">
+                        These types of trays are made up of three compartments, which make it quite easy to serve meals
+                        with rice, curry, or salad. The leak-proof mechanism keeps the quality and presentation of the
+                        food intact.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">4 CP Meal Tray With Lid</h4>
+                    <p class="mb-4">
+                        A meal consists of four components to achieve balance among the main courses; this allows an
+                        establishment to offer main, side, and even dessert items in one tray. An extremely sturdy lid
+                        keeps the contents protected from spillovers and contamination.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">5 CP Meal Tray With Lid</h4>
+                    <p class="mb-4">
+                        Most favorite with caterers and renowned food delivery services, this tray is best equipped to
+                        serve five different varieties of dishes without mingling their flavors.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">6 Compartment Meal Tray with Lid</h4>
+                    <p class="mb-4">
+                        It ideally suits full-course meals, giving six separate compartments for starters, mains, and
+                        desserts separately, maintaining freshness.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">8 Compartment Meal Tray with Lid</h4>
+                    <p class="mb-4">
+                        This tray is suitable for serving a large number of meals, allowing the business to serve mixed
+                        food combinations while being hygienic and presentable.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">The Pasta Tray</h4>
+                    <p class="mb-4">
+                        This is a proper pasta tray, designed with a view for salads, continental dishes, and other
+                        pasta. This would be a sure spill-proof takeaway and delivery-friendly item for those taking
+                        food home.
+                    </p>
+
+                    <h4 class="text-xl font-semibold text-dark mb-2">Benefits of Meal Trays</h4>
+                    <p class="mb-6">
+                        Meal trays not only give a clean and organized packaging alternative but also keep foodstuffs
+                        fresh and uncontaminated. This compartment feature regulates portion control and avoids the
+                        mixing of dissimilar food items. The leak-proof lids facilitate spill-proof transportation,
+                        which is a key feature for delivery services. Meal trays are light, microwave-friendly, and easy
+                        to handle for customer convenience. Eco-friendly materials can also be used in making meal trays
+                        to support sustainable packaging practices, thereby enhancing their desirability to business
+                        owners.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">"Delivering Quality Meal Trays for Fresh, Secure, and
+                        Convenient Packaging."</h3>
+                    <p>
+                        Our eco-friendly, environmentally friendly, and long-lasting meal trays at Polypack Enterprises
+                        are made to satisfy the various packaging requirements of the food sector. We guarantee that
+                        your meals will arrive fresh, safe, and aesthetically pleasing with our meal trays, which
+                        include 2 CP, 3 CP, 4 CP, 5 CP, 6 CP, 8 CP, and Pasta Trays. Because of our dedication to
+                        sustainability and quality, we offer meal tray solutions that enable companies to reliably and
+                        efficiently serve clients.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Meal Tray Collection</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Designed for organized, spill-proof meal
+                        packaging</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 2 CP Meal Tray with Lid -->
+                    <div
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-18-1.png"
+                                alt="2 CP Meal Tray with Lid" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">2 CP Meal Tray with Lid</h3>
+                            <p class="text-gray-600 mb-4">Convenient and secure, this tray is designed for organized
+                                serving and storage of well-balanced meals.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">2 compartments</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 CP Meal Tray with Lid -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.1s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-19-1.png"
+                                alt="3 CP Meal Tray with Lid" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">3 CP Meal Tray with Lid</h3>
+                            <p class="text-gray-600 mb-4">Streamline your meal presentation with this versatile tray,
+                                offering organized and secure servings.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">3 compartments</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 CP Meal Tray with Lid -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.2s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-20-1.png"
+                                alt="4 CP Meal Tray with Lid" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">4 CP Meal Tray with Lid</h3>
+                            <p class="text-gray-600 mb-4">Optimize your meal service with this spacious tray, ensuring
+                                convenient and secure storage.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">4 compartments</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 CP Meal Tray with Lid -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.3s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-21-1.png"
+                                alt="5 CP Meal Tray with Lid" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">5 CP Meal Tray with Lid</h3>
+                            <p class="text-gray-600 mb-4">Efficiently serve and store a diverse range of dishes with
+                                this spacious and secure tray.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">5 compartments</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 Compartment Meal Tray with Lid -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.4s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-38-2.png"
+                                alt="6 Compartment Meal Tray with Lid" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">6 CP Meal Tray with Lid</h3>
+                            <p class="text-gray-600 mb-4">Versatile and spacious, this tray ensures organized and secure
+                                serving for a variety of dishes.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">6 compartments</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8 Compartment Meal Tray with Lid -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.5s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-22-1.png"
+                                alt="8 Compartment Meal Tray with Lid" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">8 CP Meal Tray with Lid</h3>
+                            <p class="text-gray-600 mb-4">Streamlined and secure, perfect for serving and storing a
+                                variety of dishes.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">8 compartments</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pasta Tray -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.6s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/meal tray/Untitled-design-24-1.png"
+                                alt="Pasta Tray" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">Pasta Tray</h2>
+                                <p class="text-gray-600 mb-4">Versatile and adjustable with dimensions of 30-40-60 mm,
+                                    perfect for pasta presentations.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-primary font-medium">Specialty design</span>
+                                    <a href="contactus.html"
+                                        class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                        Enquire
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Our Meal Trays</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Quality and functionality for perfect meal
+                        presentation</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Premium Quality</h3>
+                        <p class="text-gray-600">Manufactured with food-safe materials that meet international standards
+                            for food packaging.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.1s">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Leakproof Design</h3>
+                        <p class="text-gray-600">Secure lids and moisture-resistant features prevent spills during
+                            transport.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.2s">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Compartmentalized</h3>
+                        <p class="text-gray-600">Keep different food items separate and fresh with our multi-compartment
+                            designs.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.3s">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Eco-Friendly</h3>
+                        <p class="text-gray-600">Sustainable options available including biodegradable and recyclable
+                            materials.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Meal Trays?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today for competitive pricing and bulk order
+                    discounts.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://wa.me/919891257954"
+                        class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+                        Get a Quote
+                    </a>
+                    <a href="tel:+919891257954"
+                        class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Accordion functionality
+            document.querySelectorAll('.accordion-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('svg');
+
+                    // Toggle content visibility
+                    content.classList.toggle('hidden');
+
+                    // Rotate icon
+                    icon.classList.toggle('rotate-180');
+
+                    // Close other open accordions
+                    document.querySelectorAll('.accordion-btn').forEach(otherButton => {
+                        if (otherButton !== button) {
+                            otherButton.nextElementSibling.classList.add('hidden');
+                            otherButton.querySelector('svg').classList.remove('rotate-180');
+                        }
+                    });
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Scroll animations
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.animate__animated');
+
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (elementPosition < windowHeight - 100) {
+                        const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+                            element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+
+                        if (animation) {
+                            element.classList.add(animation);
+                        }
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateOnScroll);
+            window.addEventListener('load', animateOnScroll);
+        </script>
+    </div>
+
+    <!-- meal tray -end here -->
+
+
+
+    <!-- Modern Footer Design start -->
+    <div id="footer-bottom"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-bottom').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading slider:', error));
+    </script>
+    <!-- Modern Footer Design end -->
+
+
+    <!-- back to top start-->
+    <button id="backToTopBtn" title="Back to Top"
+        class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+    <!-- back to top end -->
+
+
+    <!-- Fixed Brochure Button Start HERE-->
+    <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+        <div class="relative writing-vertical ">
+            <!-- Main Button -->
+            <button id="toggleBrochure"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+                Download Brochure
+            </button>
+
+            <!-- Dropdown Options -->
+            <div id="brochureDropdown"
+                class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+                <a href="assests/pdfs/led_lighting pdf.pdf"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+                    SMD LED
+                    Lighting</a>
+                <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+                    Driver</a>
+            </div>
+        </div>
+    </div>
+    <!-- Fixed Brochure Button End HERE-->
+
+    <script src="assests/js/header.js"></script>
+    <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+    <script src="assests/js/search-bar.js"></script>
+    <script src="assests/js/footer.js"></script>
+    <script src="assests/js/paper-product.js"></script>
+</body>

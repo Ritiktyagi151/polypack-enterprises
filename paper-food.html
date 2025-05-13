@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+    href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title> PolyPack Enterprises</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!--NAV SECTION END HERE..-->
+
+  <div class="w-full">
+    <img src="" alt="Baking tray" class="w-full h-auto object-contain max-w-full">
+  </div>
+
+
+
+  <!--paper-food-start here -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#EA580C',  // Orange-600
+            secondary: '#C2410C', // Orange-700
+            accent: '#F97316',   // Orange-500
+            light: '#FFEDD5',    // Orange-50
+            dark: '#9A3412',     // Orange-800
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'fade-in': 'fadeIn 1s ease-in',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/css">
+    .spec-table tr:nth-child(even) {
+      background-color: #FFEDD5;
+      /* Orange-50 */
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+    }
+
+    .product-card {
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <div class="font-poppins bg-orange-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Paper Food Containers</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              Eco-friendly, biodegradable food containers perfect for restaurants, cafes and food delivery services.
+              Sustainable packaging that keeps food fresh and protected.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <img src="assests/new-images/images/products/Paper-Food-Containers.png" alt="Premium paper food containers"
+              class="rounded-lg shadow-xl w-full h-80 max-w-lg mx-auto object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Product Specifications</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 spec-table">
+              <thead class="bg-primary">
+                <tr>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Feature</th>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Details</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material Used</td>
+                  <td class="px-6 py-4 text-gray-700">Food-grade virgin Paperboard (PE/PLA Coated)</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Sizes Available</td>
+                  <td class="px-6 py-4 text-gray-700">250ml, 500ml, 750ml, 1000ml, Custom Sizes Available</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Coating Type</td>
+                  <td class="px-6 py-4 text-gray-700">Single or Double PE/PLA Coating for Moisture Resistance</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing Technology</td>
+                  <td class="px-6 py-4 text-gray-700">Flexographic, Offset, Digital Printing (Custom Branding Available)
+                  </td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Benefits</td>
+                  <td class="px-6 py-4 text-gray-700">Eco-Friendly, Biodegradable, Leakproof, Durable, Heat-Resistant
+                  </td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Usage Applications</td>
+                  <td class="px-6 py-4 text-gray-700">Takeaway Meals, Soups, Gravies, Noodles, Rice, Desserts</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Leakproof Design</td>
+                  <td class="px-6 py-4 text-gray-700">Yes, with Advanced Heat-Sealing Technology</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Customization</td>
+                  <td class="px-6 py-4 text-gray-700">Logo, Branding, Custom Prints, Lid Options Available</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Quality Certification</td>
+                  <td class="px-6 py-4 text-gray-700">ISO, FSC, FDA, BIS, FSSAI Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About Our Paper Food Containers</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="prose max-w-none text-gray-700">
+          <p class="mb-6">
+            In a world where sustainability is popular, companies and customers are using environmentally conscious
+            packaging options. Paper food containers are one of the most popular alternative substances to plastic.
+            Paper food containers are biodegradable, recyclable, and compostable, suggesting one-stop solutions for
+            restaurants, takeaway services, bakeries, and food delivery businesses.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">The many perks of using Paper Food Containers</h3>
+          <p class="mb-6">
+            Paper food containers offer many benefits beyond reducing plastic disposal, such as longer durability,
+            functionality, and versatility. Companies adopting paper-based food containers will tend to promote a good
+            brand image while taking positive steps toward a green planet, especially because of a growing consumer's
+            sense of environmentalism.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Why Are Paper Food Containers a Wise Choice for
+            Sustainability?</h3>
+          <p class="mb-6">
+            Paper food containers serve as an environmentally friendly alternative to plastics, as they can biodegrade,
+            be recycled, and composted. Since they are sourced from renewable resources and help to cut down on plastic
+            waste, they maintain food safety and durability. Lightweight, grease-resistant, and leakproof, they serve
+            any required purposes for takeout and delivery. These containers can also be branded for the business,
+            establishing the company on a greener route. By opting for paper food containers, businesses too contribute
+            to environmental conservation without compromising on quality.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Types of Paper Food Containers</h3>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">1. Paper Bowls & Containers for Takeaway</h4>
+          <p class="mb-4">
+            Perfect for takeaway, these paper bowls are ideal for packaging salads, noodles, pasta, soups, and rice
+            bowls from restaurants, cafes, and cloud kitchens. They are available in different sizes, complete with
+            tight seals on their covers to avoid spills while on the go.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">2. Paper Boxes for Fast Food & Snacks</h4>
+          <p class="mb-4">
+            Paper boxes are used to pack burgers, sandwiches, wraps, and fries by many a burger joint, sandwich shop, or
+            restaurant at a fast-food counter. They are designed to withstand rough use and are strong against grease in
+            order to keep food fresh.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">3. Paper Food Trays & Clamshell Boxes</h4>
+          <p class="mb-4">
+            Paper food trays made of kraft paper or white paperboard are commonly found in the packaging of street
+            foods, nachos, and baked products. Clamshell boxes are quite handy with provisions for takeouts and
+            environmentally conscious establishments.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">4. Paper Cups with Lids</h4>
+          <p class="mb-4">
+            Paper cups with lids serve both hot and cold beverages. They are heat resistant, leakproof, and come in
+            single or double walls for a snug grip.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">5. Microwave-Safe Paper Containers</h4>
+          <p class="mb-6">
+            These paper food containers are usually safe to use for microwaves, enabling customers to simply heat up
+            their meals before eating.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">What Industries Are Currently Using Paper Food Containers?
+          </h3>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">1. Restaurants & Cafes</h4>
+          <p class="mb-4">
+            With their customer-oriented approach, restaurants that provide large or medium dine-in services have always
+            embraced paper food containers to enhance the customer experience while promoting sustainability.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">2. Bakeries & Pastry Shops</h4>
+          <p class="mb-4">
+            From cakes to pastries, cookies, and brownies, paper food containers have been the go-to solutions for
+            preparing and serving freshly baked foods in their moist setting.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">3. Food Delivery & Cloud Kitchens</h4>
+          <p class="mb-4">
+            Having started from an online technology platform to global food delivery, businesses require good-sturdy
+            packaging in increasingly eco-friendly options for delivering food unharmed.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">4. Supermarkets & Grocery Stores</h4>
+          <p class="mb-6">
+            Most supermarkets and large-format retail stores stock paper food containers for items like fresh produce,
+            deli foods, or ready-made meals.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4">Polypack Enterprises: Your Trusted Partner for Paper Food
+            Containers</h3>
+          <p class="mb-6">
+            When you're looking for high-quality, sustainable, and reliable food packaging, we have made a name for
+            ourselves as a leading food container manufacturer . Our amazing container made of paper is an alternative
+            to plastic and is friendly to the environment. It has properties such as biodegradability, recyclability,
+            and compostability, and is derived from renewable raw materials into biodegradability; plastic waste
+            reduction would be achieved, along with safety and durability for different foods. These are lightweight,
+            grease-proof, and leakproof containers, the same ones that take away food or deliveries. These can also be
+            customized to businesses for branding while promoting the image of an organization that is sustainable.
+            Companies, therefore, use paper food containers and commit to conserving the environment without sacrificing
+            quality.
+          </p>
+          <p class="mb-6">
+            We have been engaged to manufacture high-quality, sustainable paper food containers. Thus, paper food
+            containers manufactured by us are now durable and eco-friendly to businesses that care for the planet.
+          </p>
+          <p>
+            As the demand for sustainable packaging grows, paper food containers have emerged as a leading solution that
+            combines environmental benefits with practical functionality. At Polypack Enterprises, we manufacture
+            high-quality paper food containers that help businesses adopt greener practices without compromising on
+            performance. Our containers are designed to meet diverse food packaging needs while supporting your
+            commitment to sustainability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Paper Food Container Collection</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Sustainable packaging solutions for all your food service
+            needs</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Round Container, 123mm Diameter -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Food Container/Untitled-design-66.png"
+                alt="Round Container, 123mm Diameter" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Round Container, 123mm Diameter</h3>
+              <p class="text-gray-600 mb-4">Compact and versatile storage solution for your convenience, providing
+                efficient organization in a sleek design.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Ideal for soups/salads</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rectangular Container, 123mm -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Food Container/Untitled-design-68.png"
+                alt="Rectangular Container, 123mm" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Rectangular Container, 123mm</h3>
+              <p class="text-gray-600 mb-4">Compact and versatile for efficient storage and organization.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Perfect for meals</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Our Paper Food Containers</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Sustainable packaging that doesn't compromise on quality
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Eco-Friendly</h3>
+            <p class="text-gray-600">Biodegradable, compostable and recyclable materials that reduce environmental
+              impact.</p>
+          </div>
+
+          <div
+            class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Leakproof</h3>
+            <p class="text-gray-600">Advanced heat-sealing technology prevents spills during transport.</p>
+          </div>
+
+          <div
+            class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Heat-Resistant</h3>
+            <p class="text-gray-600">Maintains food temperature while being safe for hot and cold items.</p>
+          </div>
+
+          <div
+            class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Brandable</h3>
+            <p class="text-gray-600">Custom printing options to showcase your brand and messaging.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Paper Food Containers?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today for competitive pricing and bulk order discounts.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="https://wa.me/919891257954"
+            class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+            Get a Quote
+          </a>
+          <a href="tel:+919891257954"
+            class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+            Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Accordion functionality
+      document.querySelectorAll('.accordion-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('svg');
+
+          // Toggle content visibility
+          content.classList.toggle('hidden');
+
+          // Rotate icon
+          icon.classList.toggle('rotate-180');
+
+          // Close other open accordions
+          document.querySelectorAll('.accordion-btn').forEach(otherButton => {
+            if (otherButton !== button) {
+              otherButton.nextElementSibling.classList.add('hidden');
+              otherButton.querySelector('svg').classList.remove('rotate-180');
+            }
+          });
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Scroll animations
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate__animated');
+
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition < windowHeight - 100) {
+            const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+              element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+
+            if (animation) {
+              element.classList.add(animation);
+            }
+          }
+        });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+    </script>
+  </div>
+
+
+
+  <!-- paper-food-end here -->
+
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-bottom').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading slider:', error));
+    </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/paper-product.js"></script>
+</body>

@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+        href="assests/images/extra img/polypack-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assests/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title> PolyPack Enterprises</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #navbar-header {
+            position: sticky !important;
+            top: 0;
+            z-index: 50;
+            width: 100%;
+            background-color: #fff;
+            /* Ensure background is set */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--NAV SECTION START HERE..-->
+    <div id="navbar-header"></div>
+    <!--NAV SECTION END HERE..-->
+
+    <div class="w-full">
+        <img src="" alt="Baking tray" class="w-full h-auto object-contain max-w-full">
+    </div>
+
+
+
+    <!-- Moulding-container start here -->
+
+    <style type="text/css">
+        .spec-table tr:nth-child(even) {
+            background-color: #FFEDD5;
+            /* Orange-50 */
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    </head>
+    <div class="font-poppins bg-orange-50">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            poppins: ['Poppins', 'sans-serif'],
+                        },
+                        colors: {
+                            primary: '#EA580C',  // Orange-600
+                            secondary: '#C2410C', // Orange-700
+                            accent: '#F97316',   // Orange-500
+                            light: '#FFEDD5',    // Orange-50
+                            dark: '#9A3412',     // Orange-800
+                        },
+                        animation: {
+                            'fade-in-up': 'fadeInUp 0.8s ease-out',
+                            'fade-in': 'fadeIn 1s ease-in',
+                            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <!-- Hero Section -->
+        <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+                        <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+                            Premium <span class="text-primary">Molding Containers</span>
+                        </h1>
+                        <p class="text-lg text-gray-700 mb-8">
+                            Versatile, durable, and eco-friendly molding containers for food, electronics, cosmetics,
+                            and industrial packaging. Perfect for businesses seeking sustainable solutions.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/919891257954"
+                                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                                Chat on WhatsApp
+                            </a>
+                            <a href="tel:+919891257954"
+                                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+                        <img src="assests/new-images/images/products/Molding-Container.png"
+                            alt="Premium molding containers"
+                            class="rounded-lg shadow-xl w-full h-80 max-w-lg mx-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Technical Product Specifications</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200 spec-table">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col"
+                                        class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                                        Specification</th>
+                                    <th scope="col"
+                                        class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                                        Details</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material Used</td>
+                                    <td class="px-6 py-4 text-gray-700">Food-grade Virgin Paperboard (PE/PLA Coated)
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Sizes Available
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">50ml, 100ml, 150ml, 200ml, 250ml, 300ml, 500ml
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Coating Type</td>
+                                    <td class="px-6 py-4 text-gray-700">Single or Double PE/PLA Coating</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing
+                                        Technology</td>
+                                    <td class="px-6 py-4 text-gray-700">Flexographic, Offset, Digital Printing</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Benefits</td>
+                                    <td class="px-6引っ py-4 text-gray-700">Eco-Friendly, Durable, Lightweight,
+                                        Customizable</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Usage Applications
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">Hot & Cold Beverages, Ice Cream, Soup, etc.</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Leakproof Design
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">Yes, with Advanced Heat-Sealing Technology</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Customization</td>
+                                    <td class="px-6 py-4 text-gray-700">Logo, Branding, and Custom Prints Available</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Quality
+                                        Certification</td>
+                                    <td class="px-6 py-4 text-gray-700">ISO, FSC, FDA, BIS, FSSAI Certified</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Product Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About Our Molding Containers</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="prose max-w-none text-gray-700">
+                    <p class="mb-6">
+                        Molding containers have revolutionized the packaging industry with their versatility and
+                        durability. Made from high-quality plastics, paper pulp, or biodegradable materials, these
+                        containers cater to a wide range of industrial and consumer packaging needs.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Perks of Using Molding Containers</h3>
+                    <p class="mb-6">
+                        Molding containers offer numerous advantages, including being lightweight, cost-effective, and
+                        highly customizable. They provide structural strength for safe shipping and storage. Many are
+                        made from recyclable or biodegradable materials, supporting eco-friendly packaging solutions.
+                    </p>
+                    <p class="mb-6">
+                        These containers can withstand external pressure, making them ideal for fragile items. They are
+                        airtight and waterproof, preserving the freshness of food and pharmaceuticals. Additionally,
+                        molding containers enhance product presentation with clean, professional packaging.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Applications of Molding Containers</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><strong>Food and Beverage Packaging:</strong> Suitable for takeaway meals, salads, and
+                            desserts.</li>
+                        <li><strong>Electronics and Appliance Packaging:</strong> Protects sensitive parts during
+                            shipping.</li>
+                        <li><strong>Cosmetics and Pharmaceutical Packaging:</strong> Offers bright, secure protection
+                            for beauty and medical products.</li>
+                        <li><strong>Industrial and Auto Components:</strong> Safeguards small components and hardware.
+                        </li>
+                        <li><strong>Retail and Consumer Goods Packaging:</strong> Enhances product value through design
+                            and safe delivery.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Opportunities for Customization and Branding</h3>
+                    <p class="mb-6">
+                        Molding containers are highly customizable, allowing businesses to print logos, product
+                        information, and promotional content directly on the surface. This enhances brand visibility and
+                        creates a professional appearance that attracts consumers. Available in various shapes, sizes,
+                        and colors, these containers can align with brand aesthetics. Tamper-evident seals further
+                        enhance product security and build customer trust.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Why Choose Molding Containers?</h3>
+                    <p class="mb-6">
+                        Molding containers combine utility, aesthetics, and environmental responsibility. Their ability
+                        to mold into various shapes and sizes makes them suitable for diverse products. With
+                        customization options, businesses can optimize visibility and appeal, making these containers a
+                        preferred choice for sustainable packaging.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Polypack Enterprises: Your Trusted Partner</h3>
+                    <p class="mb-6">
+                        At Polypack Enterprises, we are committed to delivering high-quality, sustainable molding
+                        containers. Our products are durable, eco-friendly, and customizable to meet diverse business
+                        needs. By choosing us, you ensure superior packaging solutions that align with environmental
+                        responsibility and enhance your brand.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Molding Container Collection</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Versatile and sustainable packaging solutions for
+                        all industries</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Container 250 mL Flat -->
+                    <div
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/1-18-1.png"
+                                alt="250 mL Flat Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">250 mL Flat Container</h3>
+                            <p class="text-gray-600 mb-4">Compact, stackable, and versatile for storing liquids or small
+                                items, ideal for travel or daily use.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Ideal for small items</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 250 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.1s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/2-20.png"
+                                alt="250 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">250 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Versatile and convenient solution for storing liquids or small
+                                items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Perfect for liquids</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 300 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.2s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/3-14.png"
+                                alt="300 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">300 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Versatile and practical solution for storing liquids or small
+                                items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Great for storage</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 400 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.3s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/4-13.png"
+                                alt="400 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">400 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Spacious and versatile solution for convenient storage of
+                                liquids or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Ideal for meals</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 500 mL -->
+                    <div
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/5-9.png"
+                                alt="500 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">500 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Capacious and versatile storage solution, perfect for
+                                organizing liquids or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Great for bulk storage</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 750 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.1s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/6-8-1.png"
+                                alt="750 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">750 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Generously sized and versatile storage solution for organizing
+                                liquids or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Perfect for large items</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 1000 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.2s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/7-6.png"
+                                alt="1000 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">1000 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Spacious and versatile storage solution for organizing liquids
+                                or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Ideal for bulk storage</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 1000 mL Flat -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.3s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/8-4-1.png"
+                                alt="1000 mL Flat Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">1000 mL Flat Container</h3>
+                            <p class="text-gray-600 mb-4">Capacious and streamlined solution for organizing liquids or
+                                small items efficiently.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Great for flat storage</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 1200 mL -->
+                    <div
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/9-2-1.png"
+                                alt="1200 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">1200 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Capacious and versatile storage solution for efficient
+                                organization of liquids or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Ideal for large quantities</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 1500 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.1s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/10-2.png"
+                                alt="1500 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">1500 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Capacious and versatile solution for organizing and storing
+                                liquids or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Perfect for bulk storage</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container 2500 mL -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.2s">
+                        <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                            <img src="assests/new-images/images/products/Moulding Container/11-3-1.png"
+                                alt="2500 mL Container" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-dark mb-2">2500 mL Container</h3>
+                            <p class="text-gray-600 mb-4">Sizable and versatile solution for organizing and storing
+                                larger quantities of liquids or small items.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-medium">Great for large quantities</span>
+                                <a href="contactus.html"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                                    Enquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Our Molding Containers</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Durable and sustainable packaging for all your
+                        needs</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Eco-Friendly</h3>
+                        <p class="text-gray-600">Made from recyclable or biodegradable materials to reduce environmental
+                            impact.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.1s">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Durable</h3>
+                        <p class="text-gray-600">Structurally strong to protect fragile items during shipping and
+                            storage.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.2s">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Customizable</h3>
+                        <p class="text-gray-600">Supports logos, branding, and custom prints for enhanced visibility.
+                        </p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+                        style="animation-delay: 0.3s">
+                        <div
+                            class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Versatile</h3>
+                        <p class="text-gray-600">Suitable for food, electronics, cosmetics, and industrial applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Molding Containers?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today for competitive pricing and bulk order
+                    discounts.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://wa.me/919891257954"
+                        class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+                        Get a Quote
+                    </a>
+                    <a href="tel:+919891257954"
+                        class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Scroll animations
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.animate__animated');
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (elementPosition < windowHeight - 100) {
+                        const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+                            element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+                        if (animation) {
+                            element.classList.add(animation);
+                        }
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateOnScroll);
+            window.addEventListener('load', animateOnScroll);
+        </script>
+    </div>
+
+
+
+
+
+    <!-- Moulding-container -end here -->
+
+
+
+    <!-- Modern Footer Design start -->
+    <div id="footer-bottom"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-bottom').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading slider:', error));
+    </script>
+    <!-- Modern Footer Design end -->
+
+
+    <!-- back to top start-->
+    <button id="backToTopBtn" title="Back to Top"
+        class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+    <!-- back to top end -->
+
+
+    <!-- Fixed Brochure Button Start HERE-->
+    <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+        <div class="relative writing-vertical ">
+            <!-- Main Button -->
+            <button id="toggleBrochure"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+                Download Brochure
+            </button>
+
+            <!-- Dropdown Options -->
+            <div id="brochureDropdown"
+                class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+                <a href="assests/pdfs/led_lighting pdf.pdf"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+                    SMD LED
+                    Lighting</a>
+                <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+                    Driver</a>
+            </div>
+        </div>
+    </div>
+    <!-- Fixed Brochure Button End HERE-->
+
+    <script src="assests/js/header.js"></script>
+    <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+    <script src="assests/js/search-bar.js"></script>
+    <script src="assests/js/footer.js"></script>
+    <script src="assests/js/paper-product.js"></script>
+</body>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png" href="assests/images/extra img/polypack-logo.png"/>
+  <title> PolyPack Enterprises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--NAV SECTION START HERE..-->
+    <div id="navbar-header"></div>
+  <!-- Other content -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarHeader = document.getElementById('navbar-header');
+        navbarHeader.innerHTML = data;
+
+        // Force reflow to ensure sticky positioning is applied
+        navbarHeader.offsetHeight; // Trigger reflow
+        navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <!--NAV SECTION END HERE..-->
+
+
+  <div class="w-full">
+    <img src="assests/images/banneers/certification.png" alt="About Us Banner"
+      class="w-full h-auto object-cover max-w-full">
+  </div>
+
+
+
+  <!--CERTIFICATION START HERE-->
+  <div class="certification text-center flex flex-col gap-7  font-bold  bg-cover bg-center bg-no-repeat bg-fixed"
+    style="background-image: url('assests/images/COB_Lens_Concealed_&_Deep_Downlight/living.png');">
+    <div class="pt-10">
+      <h2 class="relative text-center mb-4">
+        <span
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-[57px] h-[15px] border-[5px] border-x-[5px] border-t-[5px] border-b-0 border-[#ff5e14]"></span>
+      </h2>
+      <h1 class="text-4xl font-bold text-black">Certification</h1>
+      <h2 class="heading text-center text-xl font-bold relative mb-10">
+        <span class="block border-b-[5px] border-[#ff5e14] w-[57px] mx-auto pt-[5px]"></span>
+      </h2>
+
+
+    </div>
+
+    <!-- Responsive grid: min 2 columns on all screens -->
+    <div
+      class="grid mx-11 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center px-5 pb-[100px]">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream-1.png" alt="Frame 1" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream2.png" alt="Frame 2" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream3.png" alt="Frame 3" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream4.png" alt="Frame 4" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream5.png" alt="Frame 5" onclick="openModal(this)">
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+      <div class="flex justify-center items-center w-full h-full">
+        <img id="modalImage" class="w-auto h-auto max-w-full max-h-full object-contain" src="" alt="Full Image">
+      </div>
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-white font-bold text-2xl">X</button>
+    </div>
+  </div>
+  <!--CERTIFICATION END HERE-->
+
+
+
+
+
+
+  <!-- footer section start here -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- footer section end here -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 p-4 rounded-full bg-orange-500 text-white font-bold shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄 SMD LED
+          Lighting</a>
+        <a href="led_driver_pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/certification.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+</body>

@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="smd_logo.png" href="smd_logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title> polypack enterprises</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!--NAV SECTION END HERE..-->
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-paper-bags-pack-banner.jpg" alt="paper-bags "
+      class="w-full h-auto object-contain max-w-full">
+  </div>
+
+  <!-- paper-bags-start here -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#EA580C',  // Orange-600
+            secondary: '#C2410C', // Orange-700
+            accent: '#F97316',   // Orange-500
+            light: '#FFEDD5',    // Orange-50
+            dark: '#9A3412',     // Orange-800
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'fade-in': 'fadeIn 1s ease-in',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/css">
+    .spec-table tr:nth-child(even) {
+      background-color: #FFEDD5;
+      /* Orange-50 */
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+    }
+
+    .product-card {
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .specification-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .specification-table th,
+    .specification-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #E5E7EB;
+    }
+
+    .specification-table th {
+      background-color: #EA580C;
+      color: white;
+      font-weight: 600;
+    }
+  </style>
+
+  <div class="font-poppins bg-orange-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Paper Bags for Food Packaging</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              Eco-friendly, sturdy paper bags designed to keep your food fresh while reducing environmental impact.
+              Perfect for restaurants, bakeries, and food delivery services.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <img src="assets/images/products/Paper-Bags-for-Food-Packaging.png"
+              alt="Premium Paper Bags for Food Packaging" class="rounded-lg shadow-xl w-full max-w-lg mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="lg:w-1/2">
+            <img src="https://m.media-amazon.com/images/I/717T4IXRtbL.jpg" alt="Paper Bag Details"
+              class="rounded-lg object-contain shadow-md w-full">
+          </div>
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Technical Specifications</h2>
+
+            <div class="overflow-x-auto rounded-lg shadow-sm">
+              <table class="specification-table">
+                <thead>
+                  <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Material Used</td>
+                    <td>Kraft Paper, Virgin Paperboard, Food-Grade Paper, Recycled Paper</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Bag Sizes Available</td>
+                    <td>Small (5x8 inches), Medium (8x10 inches), Large (10x14 inches), Custom Sizes Available</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Coating Type</td>
+                    <td>Single or Double PE/PLA Coating, Greaseproof & Moisture-Resistant</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Printing Technology</td>
+                    <td>Flexographic, Offset & Digital Printing</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Benefits</td>
+                    <td>Eco-Friendly, Recyclable, Sturdy, Lightweight, Biodegradable</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Usage Applications</td>
+                    <td>Takeaway & Delivery, Bakery, Restaurants, Grocery, Street Food Packaging</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Leakproof Design</td>
+                    <td>Yes, with greaseproof and moisture-resistant coating options</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Customization</td>
+                    <td>Logo, Branding, Custom Prints, Die-Cut Handles</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Quality Certification</td>
+                    <td>ISO, FSC, FDA, BIS, FSSAI certified</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="prose max-w-none">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">About Food Packaging Paper Bags</h2>
+          <p class="text-lg leading-relaxed mb-6">
+            In an age of environmental awareness, businesses have started moving toward sustainable packaging solutions,
+            and paper bags for food packaging have emerged as the top contender. They are eco-friendly but at the same
+            time are a practical, sturdy, and classy choice. With greater concern about plastic pollution, restaurants,
+            cafés, and food companies are opting for biodegradable alternatives that fit into their sustainability goals
+            without the compromise of quality and convenience.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Why Choose Paper Bags for Food Packaging?</h3>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">1. Environment Friendly and Biodegradable</h4>
+              <p class="text-gray-700">
+                Unlike plastic bags that contribute to long-term environmental pollution, paper bags are biodegradable
+                and recyclable. They naturally decompose and do not leave any harmful residue. By using paper bags,
+                businesses will knowingly reduce the carbon footprint and contribute towards the existence of a green
+                earth.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">2. Strong and Durable</h4>
+              <p class="text-gray-700">
+                Today's food-grade paper bags are being manufactured for strength to hold dry, greasy, and hot food
+                items. There are different thickness levels for varying applications to ensure durability and tearing
+                resistance. For sandwiches, pastries, or carryout meals, paper bags provide a dependable, trustworthy
+                form of packing.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">3. Grease-Proof and Food-Safe</h4>
+              <p class="text-gray-700">
+                Many <a href="https://www.polypackenterprises.com/paper-product-manufacturer.php"
+                  class="text-primary hover:underline">food-packaging paper bags</a> are coated with grease-resistant
+                materials that stop the oil and moisture from leaking through. This makes sure that customers receive
+                clean and presentable packaging for their food. In addition, these bags are produced from food-safe
+                materials that keep foods fresh and uncontaminated.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">4. Great for Customization</h4>
+              <p class="text-gray-700">
+                One of the top benefits of using paper bags is the customization options for placing logos, brand
+                colors, and creative designs. This gives companies custom-printed bags to work as an excellent tool for
+                brand visibility, thereby making a memorable positive impression on customers.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">5. Lightweight and Convenient</h4>
+              <p class="text-gray-700">
+                Paper bags are lightweight to carry. They come in various shapes and sizes to suit different types of
+                food products. They can also be folded and stored, which helps to reduce clutter in the food service.
+                Many paper bags come with handles too.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">6. Complying with Environment Regulations</h4>
+              <p class="text-gray-700">
+                Governments and environmental bodies are introducing stricter controls on plastic packaging. While many
+                countries have banned plastic bags, businesses are being forced to find sustainable alternatives. Paper
+                bags for food packaging help the business keep up with the environmental laws without compromising on
+                the quality of the packaging.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">The Role of Paper Bags in the Food Industry</h3>
+          <p class="text-lg leading-relaxed mb-6">
+            <a href="https://www.polypackenterprises.com/paper-boxes-for-food-packaging.php"
+              class="text-primary hover:underline">Paper bags for packaging</a> have become an essential part of the
+            food industry due to their eco-friendliness, durability, and safety. Unlike plastic, they are biodegradable
+            and recyclable, making them a sustainable packaging choice. Their food-grade quality and grease resistance
+            help keep food fresh and hygienic, making them ideal for bakeries, restaurants, and grocery stores.
+          </p>
+          <p class="text-lg leading-relaxed mb-6">
+            Businesses prefer paper bags for their customizability, allowing them to showcase logos and branding,
+            enhancing customer experience while promoting sustainability. Their sturdy design ensures they can carry
+            various food items without tearing, making them perfect for takeout and deliveries.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4">Polypack Enterprises - Your Committed Partner for Quality Paper
+            Bags</h3>
+          <p class="text-lg leading-relaxed">
+            Offering quality products and services to businesses that require paper bags for food packaging, Polypack
+            Enterprises specializes in a variety of sustainable and quality paper bags. In conscious and eco-friendly
+            production and innovative design, we guarantee that all businesses receive a durable, customized, food-safe
+            packaging solution. When one chooses Polypack Enterprises, it not only benefits its clients with an
+            enjoyable experience but also supports a green endeavor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Paper Bag Products</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">High-quality solutions for all your food packaging needs
+          </p>
+        </div>
+
+        <!-- Product cards would go here -->
+        <!-- You can add your product cards in the same style as previous sections -->
+        <!-- Example structure: -->
+        <!--
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+                    <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+                        <img src="assets/images/products/Paper-Bags/example-product.png" alt="Example Product" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-dark mb-2">Example Product</h3>
+                        <p class="text-gray-600 mb-4">Product description goes here.</p>
+                        <a href="contact.php" class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+            -->
+      </div>
+  </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Switch to Sustainable Packaging?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to discuss your paper bag requirements.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://wa.me/919891257954"
+          class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+          Get a Quote
+        </a>
+        <a href="tel:+919891257954"
+          class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+          Call Us Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Scroll animations
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.animate__animated');
+
+      elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight - 100) {
+          const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+            element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+
+          if (animation) {
+            element.classList.add(animation);
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+  </div>
+
+  <!-- paper-bags-end here -->
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/paper-product.js"></script>
+</body>

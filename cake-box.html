@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+    href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title> PolyPack Enterprises</title>
+  <style>
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!-- Other content -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarHeader = document.getElementById('navbar-header');
+        navbarHeader.innerHTML = data;
+
+        // Force reflow to ensure sticky positioning is applied
+        navbarHeader.offsetHeight; // Trigger reflow
+        navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <!--NAV SECTION END HERE..-->
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-noodle-banner.jpg" alt="paper boxes "
+      class="w-full h-auto object-contain max-w-full">
+  </div>
+
+  <!-- cake-box-start here -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#EA580C',  // Orange-600
+            secondary: '#C2410C', // Orange-700
+            accent: '#F97316',   // Orange-500
+            light: '#FFEDD5',    // Orange-50
+            dark: '#9A3412',     // Orange-800
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'fade-in': 'fadeIn 1s ease-in',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/css">
+    .spec-table tr:nth-child(even) {
+      background-color: #FFEDD5;
+      /* Orange-50 */
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+    }
+
+    .product-card {
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <div class="font-poppins bg-orange-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Cake Boxes</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              High-quality, eco-friendly cake boxes designed for bakeries, patisseries, and confectionery businesses.
+              Perfect for protecting and presenting cakes of all sizes.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2  animate__animated animate__fadeInRight">
+            <img src="assests/new-images/images/products/cake-boxes.png" alt="Premium cake boxes"
+              class="rounded-lg bg-white shadow-xl w-full h-80 max-w-lg mx-auto object-contain">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Product Specifications</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 spec-table">
+              <thead class="bg-primary">
+                <tr>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Feature</th>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Details</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material Used</td>
+                  <td class="px-6 py-4 text-gray-700">Food-grade Kraft Paper, Virgin Paperboard, Corrugated Cardboard
+                  </td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Sizes Available</td>
+                  <td class="px-6 py-4 text-gray-700">Small (½ kg), Medium (1 kg), Large (2 kg), Custom Sizes Available
+                  </td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Coating Type</td>
+                  <td class="px-6 py-4 text-gray-700">PE/PLA Coated, Matte or Glossy Lamination</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing Technology</td>
+                  <td class="px-6 py-4 text-gray-700">Flexographic, Offset & Digital Printing</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Benefits</td>
+                  <td class="px-6 py-4 text-gray-700">Eco-Friendly, Durable, Recyclable, Sturdy Structure, Customizable
+                  </td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Usage Applications</td>
+                  <td class="px-6 py-4 text-gray-700">Cakes, Pastries, Cupcakes, Cheesecakes, Multi-Tier Cakes</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Leakproof Design</td>
+                  <td class="px-6 py-4 text-gray-700">Yes, with Moisture and Grease-Resistant Coating</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Customization</td>
+                  <td class="px-6 py-4 text-gray-700">Logo, Branding, Window Cutouts, Embossing, UV Printing</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Quality Certification</td>
+                  <td class="px-6 py-4 text-gray-700">ISO, FSC, FDA, BIS, FSSAI Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About Our Cake Boxes</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="prose max-w-none text-gray-700">
+          <p class="mb-6">
+            We pride ourselves in creating some of the best cake boxes around. Our cake boxes are designed to be
+            customizable, food-safe, and high-quality to protect and present cakes. Bake your cakes and buy them from
+            some of our biggest customers-from bakeries to cafés-to home bakers to cake behemoths, and use our cake
+            boxes to make a difference.
+          </p>
+
+          <p class="mb-6">
+            Packaging for cakes is the most important agent for safe transiting, branding, and satisfying the
+            end-consumer. Well-designed cake boxes are sturdy, eco-friendly, and attractive to customers, making it
+            possible for businesses to deliver cakes in good condition for use and create a cake that looks as beautiful
+            as it tastes at delivery.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Quality cake boxes are important for the following reasons:
+          </h3>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">1. Prevent Spoiling; Ensure the Freshness</h4>
+          <p class="mb-4">
+            Without packaging, cakes can be enormously prone to damage during handling or transport. Custom-made cake
+            boxes from very strong and moisture-resistant material keep cakes intact, fresh, and free from contamination
+            and all the while keeping the same texture and flavor.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">2. Elevated Presentation and Branding</h4>
+          <p class="mb-4">
+            The most beautiful box is the best protective box plus a view-enhancing factor. As a cake box manufacturer
+            with experience, we have custom printing
+            methods for businesses to print their logos, colors, and designs onto the boxes so that their products
+            become distinct in the marketplace.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">3. Green and Sustainable</h4>
+          <p class="mb-4">
+            Organic Cake Boxes are the best for such an environment, with lots of need in this domain. We provide
+            biodegradable and recyclable cake boxes according to caring initiatives towards the environment. Moreover,
+            our eco-friendly packaging solutions will make it very easy for businesses to reduce their carbon prints
+            without compromising on quality.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">4. Personalized and Versatile</h4>
+          <p class="mb-4">
+            Different types of cakes have different kinds of packing, and we manufacture cake boxes in every shape,
+            size, and style:
+          </p>
+          <ul class="list-disc pl-6 mb-6">
+            <li class="mb-2">Single cake boxes for standard cakes</li>
+            <li class="mb-2">Multi-tier cake boxes for wedding and celebratory cakes</li>
+            <li class="mb-2">Window cake boxes for better visibility of products</li>
+            <li>Hard cake boxes that are not easily visible for higher occasions and best cakes</li>
+          </ul>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">We manufacture various types of cake boxes:</h3>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">1. Cake Boxes with Standards:</h4>
+          <ul class="list-disc pl-6 mb-4">
+            <li class="mb-2">Made of strong food-grade cardboard</li>
+            <li>Available in various sizes and colors, very easy to fold and assemble</li>
+          </ul>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">2. Window Cake boxes:</h4>
+          <p class="mb-4">
+            Showcase designer cakes; may be customized with brand logos and labels. Feature a clear window for product
+            display.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">3. Tall & Multi-Tier Cake Box</h4>
+          <p class="mb-4">
+            They are to be used for layered and wedding cakes. Built tough to be transportable and comes with handles
+            for easy carrying.
+          </p>
+
+          <h4 class="text-xl font-semibold text-dark mb-2">4. Premium-grade Bridget cake boxes</h4>
+          <p class="mb-4">
+            High-end cakes are luxurious with rigor and extra durability in a rigid construct. Has Matte, Gloss, and
+            Texture Finishes.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">"Creating Strong, Elegant, and Sustainable Cake Boxes for
+            You."</h3>
+          <p class="mb-6">
+            We prioritize innovation and sustainability, offering a range of customizable cake boxes that help
+            businesses protect, present, and promote
+            their baked goods. Whether you need window cake boxes, multi-tier packaging, or premium rigid boxes, we
+            deliver solutions that elevate your brand and keep your cakes fresh and secure.
+          </p>
+          <p>
+            Choose us for premium cake box manufacturing and ensure your cakes are delivered with style and quality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Cake Box Collection</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Designed for protection, presentation, and brand appeal</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Standard Cake Boxes -->
+          <div
+            class="product-card bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-48 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/2-15.png" alt="Standard Cake Boxes"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-3">Standard Cake Boxes</h3>
+              <p class="text-gray-600 mb-4">Durable food-grade boxes perfect for protecting cakes of all sizes</p>
+              <a href="#standard-boxes" class="text-primary font-medium hover:underline inline-flex items-center">
+                View Products
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Window Cake Boxes -->
+          <div
+            class="product-card bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-48 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/6-5.png" alt="Window Cake Boxes"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-3">Window Cake Boxes</h3>
+              <p class="text-gray-600 mb-4">Showcase your cakes while keeping them protected with clear window panels
+              </p>
+              <a href="#window-boxes" class="text-primary font-medium hover:underline inline-flex items-center">
+                View Products
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cupcake Boxes -->
+          <div
+            class="product-card bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-48 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/10-1.png" alt="Cupcake Boxes"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-3">Cupcake Boxes</h3>
+              <p class="text-gray-600 mb-4">Secure compartments for individual cupcakes with elegant presentation</p>
+              <a href="#cupcake-boxes" class="text-primary font-medium hover:underline inline-flex items-center">
+                View Products
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standard Cake Boxes Section -->
+    <section id="standard-boxes" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Standard Cake Boxes</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Durable protection for cakes of all sizes</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Cake Boxes (1000 grams) -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/2-15.png" alt="Cake Boxes (1000 grams)"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Cake Boxes (1000 grams)</h3>
+              <p class="text-gray-600 mb-4">Discover premium 1000-gram cake boxes, designed for freshness and
+                durability.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Ideal for 1kg cakes</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cake Boxes (500 grams) -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/1-13-1.png" alt="Cake Boxes (500 grams)"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Cake Boxes (500 grams)</h3>
+              <p class="text-gray-600 mb-4">Shop high-quality 500g cake boxes designed for secure and stylish packaging.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Half kg capacity</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Cake Boxes -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/3-10.png" alt="Small Cake Boxes"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Small Cake Boxes</h3>
+              <p class="text-gray-600 mb-4">Compact boxes perfect for individual treats. Customize with branding.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">For 50g cakes</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medium Cake Boxes -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/4-10.png" alt="Medium Cake Boxes"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Medium Cake Boxes</h3>
+              <p class="text-gray-600 mb-4">Order durable and eco-friendly Medium Cake Boxes for secure packaging.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Versatile size</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Window Cake Boxes Section -->
+    <section id="window-boxes" class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Window Cake Boxes</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Showcase your cakes while keeping them protected</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Cake Boxes (1000 grams) with Window -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/6-5.png" alt="Cake Boxes (1000 grams) with Window"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Cake Boxes (1000 grams) with Window</h3>
+              <p class="text-gray-600 mb-4">Perfect for showcasing your delicious cakes. Durable and stylish.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Clear window panel</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cake Boxes (50 grams) with Window -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/7-4.png" alt="Cake Boxes (50 grams) with Window"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Cake Boxes (50 grams) with Window</h3>
+              <p class="text-gray-600 mb-4">Present your delightful cakes in style, combining secure packaging with an
+                enticing view.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Small window box</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1 kg Cake Box with Handle -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/8-3.png" alt="1 kg Cake Box with Handle"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">1 kg Cake Box with Handle</h3>
+              <p class="text-gray-600 mb-4">Perfect for elegant cake presentation and easy transport.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Convenient handle</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Half kg Cake Box with Handle -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/9-1-1.png" alt="Half kg Cake Box with Handle"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Half kg Cake Box with Handle</h3>
+              <p class="text-gray-600 mb-4">Perfect for any occasion, ensures safe and stylish transport of your cakes.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Easy carrying</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cupcake Boxes Section -->
+    <section id="cupcake-boxes" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Cupcake Boxes</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Secure compartments for perfect presentation</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 6 Cupcake Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/10-1.png" alt="6 Cupcake Box"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">6 Cupcake Box</h3>
+              <p class="text-gray-600 mb-4">Stylish box with secure compartments, perfect for showcasing your treats.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Holds 6 cupcakes</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 Cupcake Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/11-2.png" alt="12 Cupcake Box"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">12 Cupcake Box</h3>
+              <p class="text-gray-600 mb-4">Shop durable boxes for secure, stylish storage of a dozen cupcakes.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Holds 12 cupcakes</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical Partition Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Cake Box/1-14.png" alt="Vertical Partition Box"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">Vertical Partition Box</h3>
+              <p class="text-gray-600 mb-4">Perfect for organizing and presenting multiple cupcakes or desserts.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Divided compartments</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Our Cake Boxes</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Quality and sustainability in every box</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Premium Quality</h3>
+            <p class="text-gray-600">Manufactured with food-grade materials that meet international safety standards.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Eco-Friendly</h3>
+            <p class="text-gray-600">Sustainable options including biodegradable and compostable materials.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Custom Branding</h3>
+            <p class="text-gray-600">Print your logo and designs to enhance brand visibility.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Bulk Discounts</h3>
+            <p class="text-gray-600">Competitive pricing with special discounts for large orders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Cake Boxes?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today for competitive pricing and bulk order discounts.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="https://wa.me/919891257954"
+            class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+            Get a Quote
+          </a>
+          <a href="tel:+919891257954"
+            class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+            Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Accordion functionality
+      document.querySelectorAll('.accordion-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('svg');
+
+          // Toggle content visibility
+          content.classList.toggle('hidden');
+
+          // Rotate icon
+          icon.classList.toggle('rotate-180');
+
+          // Close other open accordions
+          document.querySelectorAll('.accordion-btn').forEach(otherButton => {
+            if (otherButton !== button) {
+              otherButton.nextElementSibling.classList.add('hidden');
+              otherButton.querySelector('svg').classList.remove('rotate-180');
+            }
+          });
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Scroll animations
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate__animated');
+
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition < windowHeight - 100) {
+            const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+              element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+
+            if (animation) {
+              element.classList.add(animation);
+            }
+          }
+        });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+    </script>
+  </div>
+  <!-- cake-box-end here -->
+
+
+  <!-- Modern Footer Design start -->
+   <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/paper-product.js"></script>
+</body>

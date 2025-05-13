@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+        href="assests/images/extra img/polypack-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assests/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title> PolyPack Enterprises</title>
+    <style type="text/css">
+        .spec-table tr:nth-child(even) {
+            background-color: #FFEDD5;
+            /* Orange-50 */
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        #navbar-header {
+            position: sticky !important;
+            top: 0;
+            z-index: 50;
+            width: 100%;
+            background-color: #fff;
+            /* Ensure background is set */
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!--NAV SECTION START HERE..-->
+    <div id="navbar-header"></div>
+    <!-- Other content -->
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const navbarHeader = document.getElementById('navbar-header');
+                navbarHeader.innerHTML = data;
+
+                // Force reflow to ensure sticky positioning is applied
+                navbarHeader.offsetHeight; // Trigger reflow
+                navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    <!--NAV SECTION END HERE..-->
+
+    <div class="w-full">
+        <img src="assests/new-images/images/banner/new-Aluminium-Foil-Paper.png" alt="aluminiun images"
+            class="w-full h-auto object-contain max-w-full">
+    </div>
+
+    <!-- Aluminiun-foil-start here -->
+    <div class="font-poppins bg-orange-50">
+        <!-- Hero Section -->
+        <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+                        <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+                            Premium <span class="text-primary">Aluminum Foil Paper</span> for Food Packaging
+                        </h1>
+                        <p class="text-lg text-gray-700 mb-8">
+                            High-quality food-grade aluminum foil that protects and preserves your food with superior
+                            barrier properties.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/919891257954"
+                                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                                Chat on WhatsApp
+                            </a>
+                            <a href="tel:+919891257954"
+                                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+                        <img src="assests/new-images/images/products/aluminum-foil-paper.png"
+                            alt="Premium aluminum foil paper"
+                            class="rounded-lg shadow-2xl w-full h-80     max-w-lg mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Technical Specifications</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200 spec-table">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col"
+                                        class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                                        Specification</th>
+                                    <th scope="col"
+                                        class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                                        Details</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material Used</td>
+                                    <td class="px-6 py-4 text-gray-700">Food-Grade Aluminium Foil</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Thickness Options
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">9 to 25 Microns (Custom Thickness Available)
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Coating Type</td>
+                                    <td class="px-6 py-4 text-gray-700">Non-Stick, Glossy, or Matte Finish</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing
+                                        Technology</td>
+                                    <td class="px-6 py-4 text-gray-700">Flexographic, Offset, or Embossed Printing</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Benefits</td>
+                                    <td class="px-6 py-4 text-gray-700">Heat-resistant, Leakproof, Non-Toxic, Retains
+                                        Freshness</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Usage Applications
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-700">Food Wrapping, Baking, Grilling, Packaging</td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Customization</td>
+                                    <td class="px-6 py-4 text-gray-700">Available in Rolls, Sheets, and Custom Prints
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-orange-50 transition">
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Quality
+                                        Certification</td>
+                                    <td class="px-6 py-4 text-gray-700">ISO, FDA, FSSAI Approved</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Details Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About Aluminum Foil Paper</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Superior protection for food preservation and
+                        packaging</p>
+                </div>
+
+                <!-- About Product -->
+                <div class="mb-16 animate__animated animate__fade-in">
+                    <div class="prose max-w-none text-gray-700">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Aluminum foil paper stands as a remarkable example of how a common material can provide
+                            exceptional protection and preservation for food. Thin yet durable, it effectively shields
+                            food from light, moisture, and oxygen, ensuring longevity and preserving flavor. In today's
+                            world where food safety and freshness are paramount, aluminum foil paper has secured its
+                            place as an essential protective barrier.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Properties of Aluminium Foil</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            <a href="https://www.polypackenterprises.com/paper-product-manufacturer.php"
+                                class="text-primary font-medium hover:underline">Aluminum foil</a> excels due to its
+                            unique properties:
+                        </p>
+                        <ul class="list-disc pl-6 mb-6 space-y-2">
+                            <li><b>Barrier Properties:</b> Blocks light, air, and moisture that can spoil food and
+                                degrade its flavor</li>
+                            <li><b>Thermal Conductivity:</b> Withstands extreme temperatures for both hot and cold food
+                                packaging</li>
+                            <li><b>Malleability:</b> Easily shaped to fit various packaging forms and secure contents
+                            </li>
+                            <li><b>Hygienic:</b> Non-toxic and non-reactive when in direct contact with food</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Applications in Food Packaging</h3>
+                        <p class="text-lg leading-relaxed mb-6">
+                            From home kitchens to industrial food processing, aluminum foil serves countless purposes:
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-primary mb-2">Household Foil</h4>
+                                <p class="text-gray-600">For wrapping food during cooking, grilling, and storage to
+                                    preserve freshness</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-primary mb-2">Flexible Packaging</h4>
+                                <p class="text-gray-600">Used in pouches and sachets for snacks, confectionery, and
+                                    ready-to-eat meals</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-primary mb-2">Container Lids</h4>
+                                <p class="text-gray-600">Provides tamper-evident, airtight seals for yogurt cups and
+                                    meal containers</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-primary mb-2">Pharmaceutical Packaging</h4>
+                                <p class="text-gray-600">Protects sensitive medications from light and moisture in
+                                    blister packs</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Sustainability and Recycling</h3>
+                        <p class="text-lg leading-relaxed mb-6">
+                            While <a href="https://www.polypackenterprises.com/paper-product-manufacturer.php"
+                                class="text-primary font-medium hover:underline">aluminum foil paper</a> offers numerous
+                            benefits, environmental considerations are important. Aluminum is highly recyclable,
+                            requiring significantly less energy to recycle than to produce from raw materials. Promoting
+                            recycling and sustainable sourcing helps minimize its environmental impact.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Your Trusted Packaging Partner</h3>
+                        <p class="text-lg leading-relaxed">
+                            Recognizing the need for superior packaging solutions, Poly Pack Enterprises, a leader in
+                            flexible packaging materials, understands the critical role of materials like aluminum foil
+                            in modern food packaging. While not a direct manufacturer of aluminum foil, the company's
+                            expertise in sustainable packaging aligns with the evolving demands of the food industry.
+                        </p>
+                        <p class="text-lg leading-relaxed mt-4">
+                            Aluminum foil paper remains indispensable in food packaging, offering unmatched protection
+                            and preservation. As technology advances and sustainability becomes increasingly important,
+                            its role in ensuring food safety and quality will continue to evolve.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    <div
+                        class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">Food Safe Certified</h3>
+                        </div>
+                        <p class="text-gray-600">Our aluminum foil meets strict food safety standards with FDA and FSSAI
+                            certifications for direct food contact.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+                        style="animation-delay: 0.2s">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">Temperature Resistant</h3>
+                        </div>
+                        <p class="text-gray-600">Withstands extreme temperatures from freezing to oven baking without
+                            compromising integrity.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+                        style="animation-delay: 0.4s">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">Custom Printing</h3>
+                        </div>
+                        <p class="text-gray-600">Brand your foil with logos, instructions, or designs using various
+                            printing technologies.</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+                        style="animation-delay: 0.6s">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">Flexible Formats</h3>
+                        </div>
+                        <p class="text-gray-600">Available in rolls, sheets, and custom-cut sizes to meet your specific
+                            packaging needs.</p>
+                    </div>
+                </div>
+
+                <!-- Product Showcase -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-dark mb-6 border-b pb-2">Our Aluminum Foil Products</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="product-card bg-white rounded-lg overflow-hidden border border-gray-200">
+                            <div class="h-48 overflow-hidden">
+                                <img src="assests/new-images/images/products/Aluminium Foil Paper/Untitled-design-59.png"
+                                    alt="Premium Sealing Roll" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold text-dark">Premium Sealing Roll</h3>
+                                <p class="text-gray-600 mt-2">Secure your items with this high-quality sealing roll for
+                                    premium protection and freshness.</p>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <a href="contact.php"
+                                    class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-6 rounded-lg shadow-sm transition duration-300">
+                                    Enquire Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div>
+                    <h3 class="text-2xl font-bold text-dark mb-6 border-b pb-2">Frequently Asked Questions</h3>
+                    <div class="space-y-4">
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button
+                                class="accordion-btn w-full flex justify-between items-center p-4 bg-orange-50 hover:bg-orange-100 transition">
+                                <span class="font-medium text-left">Is aluminum foil safe for food contact?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 text-primary transform transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden p-4 border-t border-gray-200">
+                                <p class="text-gray-600">Yes, our food-grade aluminum foil is FDA and FSSAI approved for
+                                    direct food contact. It's non-toxic and won't react with food under normal usage
+                                    conditions.</p>
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button
+                                class="accordion-btn w-full flex justify-between items-center p-4 bg-orange-50 hover:bg-orange-100 transition">
+                                <span class="font-medium text-left">What thickness should I choose for my
+                                    application?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 text-primary transform transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden p-4 border-t border-gray-200">
+                                <p class="text-gray-600">Thinner foils (9-12 microns) work well for wrapping, while
+                                    thicker options (18-25 microns) are better for heavy-duty applications like oven
+                                    cooking. We can help you select the optimal thickness for your specific needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button
+                                class="accordion-btn w-full flex justify-between items-center p-4 bg-orange-50 hover:bg-orange-100 transition">
+                                <span class="font-medium text-left">Can I get custom branding on the foil?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 text-primary transform transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden p-4 border-t border-gray-200">
+                                <p class="text-gray-600">Absolutely! We offer various printing options including
+                                    flexographic, offset, and embossed printing to brand your aluminum foil with logos,
+                                    instructions, or decorative designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Aluminum Foil?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to discuss your aluminum foil packaging
+                    requirements.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://wa.me/919891257954"
+                        class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+                        Get a Quote
+                    </a>
+                    <a href="tel:+919891257954"
+                        class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- Aluminium-foil end  here -->
+
+    <!-- Modern Footer Design start -->
+    <div id="footer-bottom"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-bottom').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading slider:', error));
+    </script>
+    <!-- Modern Footer Design end -->
+
+
+    <!-- back to top start-->
+    <button id="backToTopBtn" title="Back to Top"
+        class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+    <!-- back to top end -->
+
+
+    <!-- Fixed Brochure Button Start HERE-->
+    <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+        <div class="relative writing-vertical ">
+            <!-- Main Button -->
+            <button id="toggleBrochure"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+                Download Brochure
+            </button>
+
+            <!-- Dropdown Options -->
+            <div id="brochureDropdown"
+                class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+                <a href="assests/pdfs/led_lighting pdf.pdf"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+                    SMD LED
+                    Lighting</a>
+                <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+                    Driver</a>
+            </div>
+        </div>
+    </div>
+    <!-- Fixed Brochure Button End HERE-->
+
+    <script src="assests/js/header.js"></script>
+    <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+    <script src="assests/js/search-bar.js"></script>
+    <script src="assests/js/footer.js"></script>
+    <script src="assests/js/paper-product.js"></script>
+</body>

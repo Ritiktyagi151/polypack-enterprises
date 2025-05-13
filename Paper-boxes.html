@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+    href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title> PolyPack Enterprises</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!--NAV SECTION END HERE..-->
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-noodle-banner.jpg" alt="paper boxes "
+      class="w-full h-auto object-contain max-w-full">
+  </div>
+
+  <!-- paper boxes-box-start here -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#EA580C',  // Orange-600
+            secondary: '#C2410C', // Orange-700
+            accent: '#F97316',   // Orange-500
+            light: '#FFEDD5',    // Orange-50
+            dark: '#9A3412',     // Orange-800
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'fade-in': 'fadeIn 1s ease-in',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/css">
+    .spec-table tr:nth-child(even) {
+      background-color: #FFEDD5;
+      /* Orange-50 */
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+    }
+
+    .product-card {
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .specification-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .specification-table th,
+    .specification-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #E5E7EB;
+    }
+
+    .specification-table th {
+      background-color: #EA580C;
+      color: white;
+      font-weight: 600;
+    }
+  </style>
+  </head>
+  <div class="font-poppins bg-orange-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Paper Boxes for Food Packaging</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              Eco-friendly, sturdy paper boxes designed to keep your food fresh while reducing environmental impact.
+              Perfect for restaurants, bakeries, and food delivery services.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <img src="https://m.media-amazon.com/images/I/61LAzvWzQLL.jpg" alt="Premium Paper Boxes for Food Packaging"
+              class="rounded-lg h-96 shadow-xl w-full max-w-lg mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="lg:w-1/2">
+            <img src="assests/new-images/images/products/Paper-Boxes-for-Food-Packaging.png" alt="Paper Box Details"
+              class="rounded-lg shadow-md w-full">
+          </div>
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Technical Specifications</h2>
+
+            <div class="overflow-x-auto rounded-lg shadow-sm">
+              <table class="specification-table">
+                <thead>
+                  <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Material Used</td>
+                    <td>Food-grade virgin Paperboard, Kraft Paper, Corrugated Paper</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Box Sizes Available</td>
+                    <td>Small (500ml), Medium (750ml), Large (1000ml), Custom Sizes Available</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Coating Type</td>
+                    <td>Greaseproof, Moisture-Resistant, PE/PLA Coating (Optional)</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Printing Technology</td>
+                    <td>Flexographic, Offset & Digital Printing</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Benefits</td>
+                    <td>Eco-Friendly, Sturdy, Recyclable, Biodegradable, Leakproof</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Usage Applications</td>
+                    <td>Takeaway & Delivery, Fast Food, Bakery, Restaurants, Street Food Packaging</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Leakproof Design</td>
+                    <td>Yes, with greaseproof and moisture-resistant coating options</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Customization</td>
+                    <td>Logo, Branding, Custom Prints, Window Cut, Die-Cut Handles</td>
+                  </tr>
+                  <tr class="hover:bg-orange-50">
+                    <td class="font-medium">Quality Certification</td>
+                    <td>ISO, FSC, FDA, BIS, FSSAI certified</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="prose max-w-none">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">About Paper Boxes for Food Packaging</h2>
+          <p class="text-lg leading-relaxed mb-6">
+            Food packaging in the contemporary world is very crucial for ensuring food quality, safety, and convenience.
+            To address these issues, paper boxes for food packaging have emerged as eco-friendly, durable, and flexible
+            solutions for restaurants, food chains, and take-away establishments. Paper boxes biodegrade, recycle, and
+            do not pose any safety hazards, hence being the perfect choice for businesses looking to minimize their
+            environmental impact when compared with plastic packaging.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Why Choose Paper Boxes for Food Packaging?</h3>
+          <p class="text-lg leading-relaxed mb-6">
+            Transporting food in paper boxes keeps it lightweight so that the food maintains its
+            freshness as it is carried. When food needs to stay warm for quite a long time without leaking, these boxes
+            provide excellent insulation. Furthermore, due to their ability to draw excessive moisture away, these boxes
+            make an excellent packaging solution for oily foods, baked goods, and takeaway food.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4">Types of Paper Boxes for Food Packaging</h3>
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">Kraft Paper Boxes</h4>
+              <p class="text-gray-700">
+                The eco-friendly, strong boxes are perfect for take-out food items, sandwiches, and baked goods.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">Corrugated Paper Boxes</h4>
+              <p class="text-gray-700">
+                Heavy corrugated boxes for food items provide additional strength and protection.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">Windowed Paper Boxes</h4>
+              <p class="text-gray-700">
+                Comes with clear film so that it enhances the visibility of food products such as desserts and pastries.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold text-primary mb-3">Coated Paper Boxes</h4>
+              <p class="text-gray-700">
+                These feature a special coating, grease resistant, which prevents oil moisture getting through, keeping
+                the surfaces dry.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-dark mb-4">Benefits of Using Paper Boxes</h3>
+          <p class="text-lg leading-relaxed mb-6">
+            Unlike plastic packaging that can linger in their natural surroundings for hundreds of years, paper boxes
+            are completely biodegradable and thus offer an environmentally compatible alternative to plastic packaging.
+            These boxes ensure safe and hygienic containment; made from food-grade materials, these prevent food from
+            being contaminated. They have been designed for branding and thus possible with customizing logos and
+            messages to enhance visibility. Cost-effective, lightweight, and adaptable, paper boxes are practical uses
+            for restaurants, bakeries, and takeout services. Packaging has become more concerned when sustainability is
+            the top of it-they offer a very functional and responsible solution for packaging.
+          </p>
+
+          <h3 class="text-2xl font-bold text-dark mb-4">Application of Paper Boxes in Food Industry</h3>
+          <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+            <li><b>Restaurants and Take-Aways</b> - Packaging of fast food, sandwiches, and wraps.</li>
+            <li><b>Bakeries and Cafés</b> - Packaging for cakes, pastries, and bread.</li>
+            <li><b>Grocery and Meal Delivery Packaging</b> - Meal kits and delivery food.</li>
+          </ul>
+
+          <p class="text-lg leading-relaxed">
+            With an increasing move towards sustainable packaging, Poly Pack Enterprises offers high-quality,
+            eco-friendly, and customizable food packaging paper boxes. Their range of products helps a business replace
+            plastic with durable, food-safe packaging solutions that are also attractive to look at. Choose us for
+            sustainable, safe, and stylish solutions for food packaging.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Paper Box Products</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">High-quality solutions for all your food packaging needs
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 500ml Meal Box with Window -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/1-15.png"
+                alt="500ml Meal Box with Window" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">500ml Meal Box with Window (16 oz)</h3>
+              <p class="text-gray-600 mb-4">Showcase your meals with convenience and style.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 500ml Meal Box without Window -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/3-11-1.png"
+                alt="500ml Meal Box without Window" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">500ml Meal Box without Window (16 oz)</h3>
+              <p class="text-gray-600 mb-4">Ideal for convenient and secure packaging of your meals.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 700ml Meal Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/4-11.png" alt="700ml Meal Box"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">700ml Meal Box (24 oz)</h3>
+              <p class="text-gray-600 mb-4">Securely pack and enjoy meals with privacy.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 1250ml Lunch Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/3-20.png"
+                alt="1250ml Lunch Box" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">1250ml Lunch/Meal Box</h3>
+              <p class="text-gray-600 mb-4">Spacious and convenient for substantial meals.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+          <!-- 1000ml Lunch Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/1-25.png"
+                alt="1000ml Lunch Box" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">1000ml Lunch/Meal Box</h3>
+              <p class="text-gray-600 mb-4">Ideal for packing meals with ample space.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 250ml Lunch Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/2-28.png"
+                alt="250ml Lunch Box" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">250ml Lunch/Meal Box</h3>
+              <p class="text-gray-600 mb-4">Compact for a light and easy meal on the go.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 500ml Lunch Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/4-11.png"
+                alt="500ml Lunch Box" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">500ml Lunch/Meal Box</h3>
+              <p class="text-gray-600 mb-4">Perfectly sized for a satisfying meal.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 750ml Lunch Box -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Boxes For Food Packaging/3-20.png"
+                alt="750ml Lunch Box" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">750ml Lunch/Meal Box</h3>
+              <p class="text-gray-600 mb-4">Ideal size for a hearty meal on the move.</p>
+              <a href="contactus.html"
+                class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                Enquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Paper Boxes?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today for competitive pricing and bulk order discounts.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="https://wa.me/919891257954"
+            class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+            Get a Quote
+          </a>
+          <a href="tel:+919891257954"
+            class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+            Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Scroll animations
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate__animated');
+
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition < windowHeight - 100) {
+            const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+              element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+
+            if (animation) {
+              element.classList.add(animation);
+            }
+          }
+        });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+    </script>
+  </div>
+  <!-- paper boxes-end here -->
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/paper-product.js"></script>
+</body>

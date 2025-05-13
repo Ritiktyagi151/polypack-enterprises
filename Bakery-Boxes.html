@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png" href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>PolyPack Enterprises</title>
+  <style type="text/css">
+    .spec-table tr:nth-child(even) {
+      background-color: #FFEDD5;
+      /* Orange-50 */
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+    }
+     #navbar-header {
+            position: sticky !important;
+            top: 0;
+            z-index: 50;
+            width: 100%;
+            background-color: #fff;
+            /* Ensure background is set */
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+  </style>
+</head>
+
+<body>
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+    <!-- Other content -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const navbarHeader = document.getElementById('navbar-header');
+                navbarHeader.innerHTML = data;
+
+                // Force reflow to ensure sticky positioning is applied
+                navbarHeader.offsetHeight; // Trigger reflow
+                navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+  <!--NAV SECTION END HERE..-->
+
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-Bakery-Boxes.png" alt="Bakery-Boxes"
+      class="w-full h-auto object-contain max-w-full">
+  </div>
+
+
+
+
+
+
+  <!-- bakery content start here -->
+  <div class="font-poppins bg-orange-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Bakery Packaging</span> Solutions
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              Eco-friendly, food-safe bakery packaging that protects your products and enhances your brand. FSC
+              certified, customizable, and designed for bakery success.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <img src="assests/new-images/images/products/Bakery-Boxes-Manufacturer.png" alt="Premium bakery packaging"
+              class="rounded-lg shadow-xl h-80 w-full max-w-lg mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Technical Specifications</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 spec-table">
+              <thead class="bg-primary">
+                <tr>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Specification</th>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Details</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material Used</td>
+                  <td class="px-6 py-4 text-gray-700">Food-grade Kraft Paper, Virgin Paperboard, Corrugated Cardboard
+                  </td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Sizes Available</td>
+                  <td class="px-6 py-4 text-gray-700">Small, Medium, Large, Custom Sizes Available</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Coating Type</td>
+                  <td class="px-6 py-4 text-gray-700">PE/PLA Coated, Matte or Glossy Lamination</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing Technology</td>
+                  <td class="px-6 py-4 text-gray-700">Flexographic, Offset & Digital Printing</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Benefits</td>
+                  <td class="px-6 py-4 text-gray-700">Eco-Friendly, Sturdy, Lightweight, Recyclable, Customizable</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Usage Applications</td>
+                  <td class="px-6 py-4 text-gray-700">Cakes, Pastries, Cupcakes, Muffins, Doughnuts, Bread</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Leakproof Design</td>
+                  <td class="px-6 py-4 text-gray-700">Yes, with Moisture and Grease-Resistant Coating</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Customization</td>
+                  <td class="px-6 py-4 text-gray-700">Logo, Branding, Window Cutouts, Embossing, UV Printing</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Quality Certification</td>
+                  <td class="px-6 py-4 text-gray-700">ISO, FSC, FDA, BIS, FSSAI Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Premium Bakery Packaging Solutions</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Sustainable packaging that showcases your bakery products
+            while keeping them fresh</p>
+        </div>
+
+        <!-- About Product -->
+        <div class="mb-16 animate__animated animate__fade-in">
+          <div class="prose max-w-none text-gray-700">
+            <p class="text-lg leading-relaxed mb-6">
+              Being a leading <a href="https://www.polypackenterprises.com/cake-box.php"
+                class="text-primary font-medium hover:underline">manufacturer of bakery boxes</a>, we know how important
+              it is when it comes to packaging for baked products. Whether it is a bakery, a café, or just creating
+              baked goods in the home kitchen, the right bakery boxes make sure your goods are fresh, safe, and
+              beautiful. Besides presenting taste, texture, and presentation, packaging provides branding for a business
+              as well.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+              Packaging here in the bakery boxes manufacturing unit stands for making strong and food-safe custom boxes
+              for a variety of bakery products such as cakes, pastries, cupcakes, muffins, cookies, and bread. Our
+              bakery boxes deliver durable, eco-friendly, and easy-to-use products, which helps businesses transport
+              their goods in the best possible manner.
+            </p>
+
+            <h3 class="text-2xl font-bold text-dark mb-4 mt-8">What Makes Quality-Based Bakery Boxes the Better Choice?
+            </h3>
+            <p class="text-lg leading-relaxed mb-6">
+              Premium bakery cartons are necessary for the preservation of baked goods, which are equally important in
+              giving it a fine retail presentation and outward appeal. These boxes defend against damages caused to
+              moisture, dust, etc., keeping all fragile items like cakes, pastries, and cookies safe during
+              transportation and storage.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+              High-quality packaging not only protects products but also works to build branding and customer goodwill.
+              Customizable designs featuring company logos, desired colors, and prints provide an overall professional
+              and aesthetic appeal, which helps businesses stand out from the fiercely competitive crowd. Such packaging
+              speaks volumes about the company and ensures that customers remember and recommend it.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+              Sustainable objectives are well complemented with eco-friendly <a
+                href="https://www.polypackenterprises.com/paper-product-manufacturer.php"
+                class="text-primary font-medium hover:underline">bakery boxes</a> made from biodegradable and recyclable
+              materials. The choice of premium production, food-safe, durable packaging not only preserves product
+              integrity but also communicates a commitment to quality and environmental sustainability.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="font-bold text-lg text-primary mb-2">1. Cake Box Manufacturing</h4>
+                <p class="text-gray-600">
+                  We specialize in high-quality cake boxes for food-safe packaging that is meant to enhance the look of
+                  all cakes and ensure protection. They are available in various forms and sizes, and styles-including
+                  windowed, foldable, and rigid boxes-all of which assure freshness when packed and good transportation.
+                </p>
+              </div>
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="font-bold text-lg text-primary mb-2">2. Baking Trays</h4>
+                <p class="text-gray-600">
+                  These fabulous durable grease-resistant baking trays are ideal for bakers in their commercial kitchens
+                  and at home. Designed to withstand high temperatures, these items are suitable for the easy baking and
+                  handling of cookies, pastries, and bread.
+                </p>
+              </div>
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="font-bold text-lg text-primary mb-2">3. Meal Trays</h4>
+                <p class="text-gray-600">
+                  The perfect keepers of compartmentalized meals, these aluminum trays are recommended for takeout and
+                  food delivery. They're environmentally friendly and leak-proof, so they'll make eating more
+                  hassle-free and beautifully mess-free.
+                </p>
+              </div>
+              <div class="bg-orange-50 p-6 rounded-lg">
+                <h4 class="font-bold text-lg text-primary mb-2">4. Pizza Box Manufacturer</h4>
+                <p class="text-gray-600">
+                  We are a renowned <a href="https://www.polypackenterprises.com/pizza-box.php"
+                    class="text-primary font-medium hover:underline">pizza box manufacturer</a> providing amazing pizza
+                  boxes with multiple features such as grease-resistant and insulation quality. Our custom designs
+                  assure safe delivery while promoting the branding and image of pizzerias and food manufacturers.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-dark mb-4 mt-8">Why Choose Us as Your Bakery Boxes Manufacturer?</h3>
+            <p class="text-lg leading-relaxed">
+              As a trusted bakery box manufacturer, we offer high-quality, sustainable, and customizable packaging
+              solutions for bakery businesses. We specialize in producing durable, food-safe, and eco-friendly bakery
+              boxes that enhance the presentation, protection, and branding of baked goods.
+            </p>
+            <p class="text-lg leading-relaxed mt-4 font-medium">
+              Partner with Poly Pack Enterprises for premium bakery box manufacturing and deliver your baked goods with
+              quality and style!
+            </p>
+          </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <div
+            class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark">Food Safe & Certified</h3>
+            </div>
+            <p class="text-gray-600">All our bakery boxes meet stringent food safety standards with ISO, FSC, FDA, BIS,
+              and FSSAI certifications for your peace of mind.</p>
+          </div>
+
+          <div
+            class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+            style="animation-delay: 0.2s">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark">Eco-Friendly Materials</h3>
+            </div>
+            <p class="text-gray-600">We use FSC® and PEFC certified paper, compostable coatings, and water-based inks to
+              minimize environmental impact.</p>
+          </div>
+
+          <div
+            class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+            style="animation-delay: 0.4s">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark">Custom Designs</h3>
+            </div>
+            <p class="text-gray-600">Full customization options including logo printing, window cutouts, embossing, and
+              branded packaging to make your bakery products stand out.</p>
+          </div>
+
+          <div
+            class="bg-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+            style="animation-delay: 0.6s">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark">Fast Turnaround</h3>
+            </div>
+            <p class="text-gray-600">Flexible MOQs and efficient production processes ensure quick delivery without
+              compromising quality.</p>
+          </div>
+        </div>
+
+        <!-- Industries Served -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold text-dark mb-6 border-b pb-2">Industries We Serve</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div class="bg-orange-50 p-4 rounded-lg text-center">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-full inline-block mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <p class="font-medium">Bakeries</p>
+            </div>
+            <div class="bg-orange-50 p-4 rounded-lg text-center">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-full inline-block mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+              </div>
+              <p class="font-medium">Cafés</p>
+            </div>
+            <div class="bg-orange-50 p-4 rounded-lg text-center">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-full inline-block mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                </svg>
+              </div>
+              <p class="font-medium">Patisseries</p>
+            </div>
+            <div class="bg-orange-50 p-4 rounded-lg text-center">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-full inline-block mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <p class="font-medium">Catering Services</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div>
+          <h3 class="text-2xl font-bold text-dark mb-6 border-b pb-2">Frequently Asked Questions</h3>
+          <div class="space-y-4">
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button
+                class="accordion-btn w-full flex justify-between items-center p-4 bg-orange-50 hover:bg-orange-100 transition">
+                <span class="font-medium text-left">Are your bakery boxes grease-resistant?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary transform transition-transform"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden p-4 border-t border-gray-200">
+                <p class="text-gray-600">Yes, all our bakery boxes feature moisture and grease-resistant coatings to
+                  keep your products fresh and presentable while preventing oil stains from showing through the
+                  packaging.</p>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button
+                class="accordion-btn w-full flex justify-between items-center p-4 bg-orange-50 hover:bg-orange-100 transition">
+                <span class="font-medium text-left">Can I get window cutouts in my bakery boxes?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary transform transition-transform"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden p-4 border-t border-gray-200">
+                <p class="text-gray-600">Absolutely! We offer window cutouts with clear film to showcase your bakery
+                  products while keeping them protected. This is a popular option for cake boxes and pastry packaging.
+                </p>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button
+                class="accordion-btn w-full flex justify-between items-center p-4 bg-orange-50 hover:bg-orange-100 transition">
+                <span class="font-medium text-left">What's the minimum order quantity for custom bakery boxes?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary transform transition-transform"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden p-4 border-t border-gray-200">
+                <p class="text-gray-600">Our MOQs vary by product, but we offer flexible quantities to accommodate both
+                  small bakeries and large-scale operations. Contact us to discuss your specific needs and we'll find a
+                  solution that works for your business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Bakery Packaging Products</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Explore our range of premium bakery packaging solutions</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="cake-box.php"
+            class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale">
+            <div class="h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Cake Box/11-2.png" alt="Cake Boxes"
+                class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-lg text-dark group-hover:text-primary transition">Cake Boxes</h3>
+              <p class="text-gray-600 mt-1">Premium packaging for cakes and pastries</p>
+            </div>
+          </a>
+
+          <a href="baking-trays.php"
+            class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up hover-scale"
+            style="animation-delay: 0.1s">
+            <div class="h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Cake Box/3-10.png" alt="Baking Trays"
+                class="w-full h-full object-contain group-hover:scale-105  transition duration-500">
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-lg text-dark group-hover:text-primary transition">Baking Trays</h3>
+              <p class="text-gray-600 mt-1">Durable trays for all your baking needs</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Bakery Packaging?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Let's discuss how we can create custom, sustainable packaging
+          solutions for your bakery products.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="https://wa.me/919891257954"
+            class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+            Get a Quote
+          </a>
+          <a href="tel:+919891257954"
+            class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+            Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+  <!-- bakery content end here -->
+
+
+
+  <!-- Modern Footer Design start -->
+   <div id="footer-bottom"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-bottom').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading slider:', error));
+    </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/getQuote.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/bakery-box.js"></script>
+</body>

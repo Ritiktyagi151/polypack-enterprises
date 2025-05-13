@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png"
+    href="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title> PolyPack Enterprises</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="navbar-header"></div>
+  <!-- Other content -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarHeader = document.getElementById('navbar-header');
+        navbarHeader.innerHTML = data;
+
+        // Force reflow to ensure sticky positioning is applied
+        navbarHeader.offsetHeight; // Trigger reflow
+        navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-about-us-banner.jpg" alt="About Us Banner"
+      class="w-full h-auto object-cover max-w-full">
+  </div>
+
+
+  <!-- about us start -->
+  <section
+    class="overflow-hidden py-8 bg-gray-200 sm:py-12 px-4 sm:px-6 lg:px-8 bg-[linear-gradient(120deg,_#1f2937_55%,_transparent_55%)]">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
+          <div class="text-center lg:text-left">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+              <span class="text-orange-400">About</span><span class="text-white"> Us</span>
+            </h3>
+            <p class="text-white text-base sm:text-lg leading-relaxed sm:leading-loose">
+              At POLY PACK ENTERPRISES, we are global specialists in packaging solutions for the food and beverage
+              industry. With a deep commitment to innovation, quality, and sustainability, we go beyond simply wrapping
+              products—we help build brands, ensure product integrity, and create memorable consumer experiences.
+              <span class="block mt-3 sm:mt-4">
+                Our team works closely with clients to develop smart, customized packaging that not only meets
+                regulatory standards but also supports their marketing and operational goals. From concept to shelf, we
+                ensure consistency, reliability, and excellence at every step.
+              </span>
+            </p>
+
+
+          </div>
+        </div>
+
+        <!-- Image Section -->
+
+        <div class="w-full lg:w-1/2">
+          <div class="relative group overflow-hidden rounded-xl shadow-2xl">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+            </div>
+            <img src="assests/images/extra img/steptodown.com622617.jpg" alt="About Poly Pack Enterprises"
+              class="w-full h-auto sm:h-[400px] md:h-[450px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              loading="lazy">
+
+            <!-- Floating Badge -->
+            <div
+              class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
+              <span class="text-sm font-medium text-gray-800">Since 2016</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- about us end  -->
+
+  <!-- Mission & Vision Section -->
+  <section
+    class="py-16 px-4 sm:px-6 md:px-8 lg:px-10 bg-gradient-to-r from-orange-50 to-orange-100 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+      <div class="absolute top-20 left-20 w-40 h-40 rounded-full bg-orange-300 blur-xl"></div>
+      <div class="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-orange-200 blur-xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative">
+      <!-- Flex container -->
+      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <!-- Image Column with animation -->
+        <div class="w-full lg:w-1/2 relative  group">
+          <div class="overflow-hidden rounded-xl mt-16 shadow-2xl">
+            <img
+              src="https://corporate.apollotyres.com/content/dam/orbit/apollo-corporate/sustainability-and-ethics/health--safety-_-environment/health-_-safety/vision-_-mission/Vision%20and%20Mission%20-%20Banner%20image.jpg"
+              alt="Team discussing mission and vision"
+              class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="absolute -bottom-5 -right-5 w-32 h-32 bg-orange-500 rounded-xl -z-10"></div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="w-full lg:w-1/2">
+          <h3 class="text-3xl sm:text-4xl font-bold text-orange-600 mb-8 relative inline-block">
+            <span class="relative z-10">Mission & Vision</span>
+            <span class="absolute bottom-0 left-0 w-full h-2 bg-orange-200 rounded-full -z-0"></span>
+          </h3>
+
+          <div class="space-y-6">
+            <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h4 class="text-xl font-bold text-orange-700 mb-3 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+                Our Mission
+              </h4>
+              <p class="text-gray-700">
+                We inspire to create and deliver improved products and services that meet the changing requirements
+                and expectations of our channel partners across the globe with uncompromising integrity & excellence
+                in enhancing our Poly Pack brand.
+              </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h4 class="text-xl font-bold text-orange-700 mb-3 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Our Vision
+              </h4>
+              <p class="text-gray-700">
+                Where there is food, there is Poly Pack. Let us make a Polypack world. As an innovative, dynamic and
+                reliable Plastic food packaging products Manufacturing Company, Our vision is to stand out as
+                ideal performer in National and International market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Processes Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <!-- Animated Heading -->
+      <div class="mb-12 md:mb-16 text-center">
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 relative inline-block">
+          <span class="relative z-10">Quality <span class="text-orange-600">Processes</span></span>
+          <span class="absolute bottom-2 left-0 w-full h-3 bg-orange-100 rounded-full -z-0"></span>
+        </h3>
+      </div>
+
+      <!-- Content Row with staggered animation -->
+      <div class="flex flex-col lg:flex-row items-start gap-10 xl:gap-16">
+        <!-- Image with hover effect -->
+        <div class="w-full lg:w-1/2 sticky top-[110px] left-0 group">
+          <div class="relative overflow-hidden rounded-2xl shadow-xl">
+            <img
+              src="https://img.freepik.com/free-photo/sustainable-development-goals-still-life_23-2150196625.jpg?ga=GA1.1.706596849.1747133413&semt=ais_hybrid&w=740"
+              alt="Quality control in factory"
+              class="w-full h-auto sm:h-[400px]  md:h-[450px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="w-full lg:w-1/2 space-y-10">
+          <!-- QA Section -->
+          <div
+            class="p-6 bg-orange-50 rounded-xl border-l-4 border-orange-500 hover:shadow-lg transition-all duration-300">
+            <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-5 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-orange-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              Quality Assurance (QA)
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <p class="text-gray-700">
+                  <span class="font-bold">ISO Certification:</span> We operate in accordance with ISO 9001 standards to
+                  ensure our packaging solutions consistently meet customer expectations and regulatory requirements.
+                </p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <p class="text-gray-700">
+                  <span class="font-bold">End-to-End Inspection:</span> From sourcing raw materials like food-grade
+                  paper or polymers to the final product, each stage undergoes detailed quality inspections.
+                </p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <p class="text-gray-700">
+                  <span class="font-bold">Automated Precision Checks:</span> Advanced moulding and packaging equipment
+                  ensure accuracy, consistency, and reduced human error during production.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- QC Section -->
+          <div
+            class="p-6 bg-orange-50 rounded-xl border-l-4 border-orange-500 hover:shadow-lg transition-all duration-300">
+            <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-5 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-orange-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              Quality Control (QC)
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <p class="text-gray-700">
+                  <span class="font-bold">Batch Sampling & Testing:</span> We conduct systematic batch tests to verify
+                  strength, durability, leak resistance, and food safety compliance.
+                </p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <p class="text-gray-700">
+                  <span class="font-bold">Defect Analysis:</span> If any product issue arises, we perform root cause
+                  analysis and implement corrective actions to prevent recurrence.
+                </p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <p class="text-gray-700">
+                  <span class="font-bold">Client-Driven Improvement:</span> Customer feedback is actively collected and
+                  integrated into our quality systems to continuously enhance our product offerings.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities & Testing Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+    <div class="max-w-7xl mx-auto">
+      <!-- Facilities Section -->
+      <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-14 mb-16">
+        <!-- Text Content with fade-in animation -->
+        <div class="w-full md:w-1/2 transition-all duration-500 ease-in-out hover:-translate-y-2">
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <h3 class="text-2xl sm:text-3xl font-bold text-orange-600 mb-6">
+              State-of-the-Art Facilities
+            </h3>
+            <p class="text-gray-700 mb-6">
+              At Polypack Enterprises, our in-house lab uses advanced technology to ensure durable, hygienic, and
+              high-performing packaging. We conduct rigorous tests across paper, plastic, and food-grade product lines.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Drop & Compression Testers:</span> Simulate stacking and transportation
+                  stresses to verify structural integrity of boxes and containers.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Leak & Seal Integrity Testers:</span> Ensure airtight and liquid-resistant
+                  seals for food-safe and chemical-safe containers.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-600 mt-0.5 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Material Testing Equipment:</span> Analyze tensile strength, impact
+                  resistance, and flexibility of raw materials used in production.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Image with zoom animation -->
+        <div class="w-full md:w-1/2 group">
+          <div class="relative overflow-hidden rounded-2xl shadow-xl">
+            <img
+              src="https://img.freepik.com/free-photo/packaging-concept_23-2147788410.jpg?ga=GA1.1.706596849.1747133413&semt=ais_hybrid&w=740"
+              alt="Modern factory equipment"
+              class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing Procedures Section -->
+      <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-14">
+        <!-- Image with hover effect -->
+        <div class="w-full md:w-1/2 order-1 md:order-2 group">
+          <div class="relative overflow-hidden rounded-2xl shadow-xl">
+            <img
+              src="https://img.freepik.com/free-photo/woman-preparing-cyber-monday-box_23-2148675031.jpg?ga=GA1.1.706596849.1747133413&semt=ais_hybrid&w=740"
+              alt="Quality testing in lab"
+              class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          </div>
+        </div>
+
+        <!-- Text Content with slide-in animation -->
+        <div class="w-full md:w-1/2 order-2 md:order-1 transition-all duration-500 ease-in-out hover:-translate-y-2">
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <h3 class="text-2xl sm:text-3xl font-bold text-orange-600 mb-6">
+              Testing Procedures
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-600 font-bold flex-shrink-0">
+                  1
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Durability Testing:</span> Ensuring packaging withstands handling, stacking,
+                  and transport stress.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-600 font-bold flex-shrink-0">
+                  2
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Leak & Seal Testing:</span> Verifying airtight and secure sealing for
+                  containers and food-grade items.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-600 font-bold flex-shrink-0">
+                  3
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Thermal Resistance:</span> Testing packaging performance under various
+                  temperature conditions.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-600 font-bold flex-shrink-0">
+                  4
+                </span>
+                <span class="text-gray-700">
+                  <span class="font-bold">Material Safety:</span> Assessing food-safety, hygiene, and compliance with
+                  regulatory standards.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- our CLient section start Here-->
+  <section class="overflow-hidden  bg-white mt-6 mx-16">
+    <div class="text-start mb-8">
+      <h3 class="text-3xl font-bold">
+        Our <span class="text-orange-500">Clients</span>
+      </h3>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper w-full px-4 mb-7 ">
+      <div class="swiper-wrapper items-center p-4 mx-7">
+        <!-- Slides -->
+        <div class="swiper-slide flex ">
+          <div
+            class=" flex justify-center items-center text-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl p-3 ">
+            <img src="assests/new-images/images/brand/Haldiram's_Logo_SVG.svg" alt="logo01" class="h-20 w-28 " />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/uncle.jpeg" alt="logo02" class="h-20 w-28" />
+          </div>
+        </div>
+
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/singla's-logo.png" alt="logo03" class="h-20 " />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/mother-bakery-logo.jpeg" alt="logo04" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/GULAB_LOGO.webp" alt="logo05" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/ganesha_logo.jpeg" alt="logo06" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Finger-Licious.png" alt="logo07" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Bread&more.jpeg" alt="logo08" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/big-basket-logo.jpeg" alt="logo09" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Barista-Circle-Logo-PNG.png" alt="logo10" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Amar bakery.jpeg" alt="logo11" class="h-20 w-28" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- our CLient section End  Here-->
+
+
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 p-4 rounded-full bg-orange-500 text-white font-bold shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄 SMD LED
+          Lighting</a>
+        <a href="led_driver_pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/our-client-slider.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+
+</body>

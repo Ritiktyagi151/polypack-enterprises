@@ -1,0 +1,99 @@
+
+    /* LED strip sequential lighting */
+    @keyframes led-power-up {
+      0% {
+        opacity: 0.1;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Bright flash before disappearing */
+    @keyframes led-flash {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.8;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Loader fade-out */
+    .fade-out {
+      animation: fadeOut 0.3s ease-out forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+   
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+ 
+
+
+    /* blog css */
+   
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .blog-popup {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .blog-popup.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-content {
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-popup.active .popup-content {
+      transform: scale(1);
+    }
+

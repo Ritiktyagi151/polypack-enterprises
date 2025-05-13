@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="smd_logo.png" href="smd_logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title> polypack enterprises</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!--NAV SECTION END HERE..-->
+
+  <div class="w-full">
+    <img src="assests/new-images/images/banner/new-paper-cup-holder-banner.jpg" alt="paper-cup-holder "
+      class="w-full h-auto object-contain max-w-full">
+  </div>
+
+
+
+  <!-- Paper-cup-holder-start here -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#EA580C',  // Orange-600
+            secondary: '#C2410C', // Orange-700
+            accent: '#F97316',   // Orange-500
+            light: '#FFEDD5',    // Orange-50
+            dark: '#9A3412',     // Orange-800
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'fade-in': 'fadeIn 1s ease-in',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/css">
+    .spec-table tr:nth-child(even) {
+      background-color: #FFEDD5;
+      /* Orange-50 */
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FFE4CC 100%);
+    }
+
+    .product-card {
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <div class="font-poppins bg-orange-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 animate__animated animate__fadeInLeft">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
+              Premium <span class="text-primary">Paper Cups & Holders</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              High-quality, eco-friendly disposable cups and holders designed for hot and cold beverages. Perfect for
+              cafes, restaurants, and food service businesses.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/919891257954"
+                class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 text-center animate__animated animate__pulse animate__infinite">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919891257954"
+                class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-lg border border-primary shadow-sm transition duration-300 text-center">
+                Call Now
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <img src="assests/new-images/images/products/paper-cup.png" alt="Premium paper cups and holders"
+              class="rounded-lg shadow-xl w-full h-80 max-w-lg mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 animate__animated animate__fade-in-up">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Product Specifications</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 spec-table">
+              <thead class="bg-primary">
+                <tr>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Feature</th>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                    Details</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Material</td>
+                  <td class="px-6 py-4 text-gray-700">Food-grade paperboard with PE/PLA coating</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Temperature Resistance</td>
+                  <td class="px-6 py-4 text-gray-700">Up to 90°C for hot drinks, ideal for cold beverages</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Available Sizes</td>
+                  <td class="px-6 py-4 text-gray-700">8oz, 12oz, 250ml, 360ml, 480ml</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Wall Types</td>
+                  <td class="px-6 py-4 text-gray-700">Single wall, Double wall, Ripple wall</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Eco-Friendly</td>
+                  <td class="px-6 py-4 text-gray-700">Biodegradable, compostable options available</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Printing Options</td>
+                  <td class="px-6 py-4 text-gray-700">Full color printing, custom branding</td>
+                </tr>
+                <tr class="hover:bg-orange-50 transition">
+                  <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Certifications</td>
+                  <td class="px-6 py-4 text-gray-700">FSC, FDA, BIS, ISO certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Product Range</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Designed for performance, sustainability, and brand appeal
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Hot Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-48 overflow-hidden flex items-center justify-center p-4">
+              <img src="https://5.imimg.com/data5/UK/JY/CP/SELLER-42622828/hot-drink-paper-cup.PNG" alt="Hot Cups"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-3">Hot Beverage Cups</h3>
+              <p class="text-gray-600 mb-4">Perfect for coffee, tea and other hot drinks with excellent heat retention
+              </p>
+              <a href="#hot-cups" class="text-primary font-medium hover:underline inline-flex items-center">
+                View Products
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Double Wall Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-48 overflow-hidden flex items-center justify-center p-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTskRstVDDeDRfOqD7Zt7sqaPscT2SQp01Xw&s"
+                alt="Double Wall Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-3">Double Wall Cups</h3>
+              <p class="text-gray-600 mb-4">Premium insulation with stylish designs for brand promotion</p>
+              <a href="#double-wall" class="text-primary font-medium hover:underline inline-flex items-center">
+                View Products
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cup Holders -->
+          <div
+            class="product-card bg-orange-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-48 overflow-hidden flex items-center justify-center p-4">
+              <img src="https://originalcupkeeper.com/wp-content/uploads/2023/09/Cardboard-Coffee-Cup-Holder.webp"
+                alt="Cup Holders" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-3">ECO Cup Holders</h3>
+              <p class="text-gray-600 mb-4">Sustainable solutions for carrying multiple drinks safely</p>
+              <a href="#holders" class="text-primary font-medium hover:underline inline-flex items-center">
+                View Products
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hot Cups Section -->
+    <section id="hot-cups" class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Hot Beverage Cups</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Perfect for coffee, tea and other hot drinks</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 8 oz Hot Cups -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/Untitled-design-32.png"
+                alt="8 oz Hot Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">8 oz Hot Cups</h3>
+              <p class="text-gray-600 mb-4">Perfect for your favorite hot beverages. Sturdy and convenient.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Single wall design</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 oz Ripple/Double Hot Cups -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/Untitled-design-33.png"
+                alt="8 oz Ripple/Double Hot Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">8 oz Ripple/Double Hot Cups</h3>
+              <p class="text-gray-600 mb-4">Elevate your hot beverage experience with these insulated cups.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Double wall insulation</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 oz Hot Cups -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/4-8.png" alt="12 oz Hot Cups"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">12 oz Hot Cups</h3>
+              <p class="text-gray-600 mb-4">Enjoy your favorite hot beverages on the move with these convenient and
+                versatile cups.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Standard size</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Double Wall Cups Section -->
+    <section id="double-wall" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Double Wall & Ripple Cups</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Premium insulation for superior drink experience</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 12 oz Ripple/Double Hot Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/5-6.png"
+                alt="12 oz Ripple/Double Hot Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">12 oz Ripple/Double Hot Cups</h3>
+              <p class="text-gray-600 mb-4">Elevate your hot beverage experience with these insulated cups.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Textured design</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 250ml Printed Double Wall Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/1-17.png"
+                alt="250ml Printed Double Wall Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">250ml Printed Double Wall Cups</h3>
+              <p class="text-gray-600 mb-4">Stylish and insulated for your beverages with vibrant prints, adding flair
+                to your sips.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Custom printing</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 360ml Printed Double Wall Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/4-12.png"
+                alt="360ml Printed Double Wall Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">360ml Printed Double Wall Cups</h3>
+              <p class="text-gray-600 mb-4">Sip in style with these insulated cups featuring eye-catching prints for a
+                trendy beverage experience.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Mid-size option</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 480ml Ripple Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/2-19.png" alt="480ml Ripple Cups"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">480ml Ripple Cups</h3>
+              <p class="text-gray-600 mb-4">Enjoy your drinks with added insulation and style in these textured ripple
+                cups.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Large capacity</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 480ml Printed Double Wall Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.4s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/3-13.png"
+                alt="480ml Printed Double Wall Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">480ml Printed Double Wall Cups</h3>
+              <p class="text-gray-600 mb-4">Enhance your drink experience with these stylish and insulated cups.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Branding ready</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 480ml Kraft Double Wall Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.5s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/5-8.png"
+                alt="480ml Kraft Double Wall Cups" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">480ml Kraft Double Wall Cups</h3>
+              <p class="text-gray-600 mb-4">Eco-friendly and insulated for a sustainable and stylish way to enjoy your
+                drinks.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Natural kraft look</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cup Holders Section -->
+    <section id="holders" class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">ECO Cup Holders</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Sustainable solutions for carrying multiple drinks</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- ECO 4 Cup Holders -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/2-12.png" alt="ECO 4 Cup Holders"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">ECO 4 Cup Holders</h3>
+              <p class="text-gray-600 mb-4">Sustainable and practical solution for carrying multiple drinks
+                conveniently.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Holds 4 cups</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ECO 2 Cup Holders -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/1-10.png" alt="ECO 2 Cup Holders"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">ECO 2 Cup Holders</h3>
+              <p class="text-gray-600 mb-4">Sustainable and compact, ideal for carrying two drinks with an eco-friendly
+                touch.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Holds 2 cups</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paper Bowl Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Paper Bowl</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Versatile container for various food items</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- PAPER BOWL 250 ML -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/Untitled-design-31.png"
+                alt="PAPER BOWL 250 ML" class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">PAPER BOWL 250 ML</h3>
+              <p class="text-gray-600 mb-4">Convenient and eco-friendly for serving soups, salads, and snacks with ease.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Perfect for sides</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 360ml Ripple Cups -->
+          <div
+            class="product-card bg-orange-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="h-64 overflow-hidden flex items-center justify-center p-4">
+              <img src="assests/new-images/images/products/Paper Cups & Cup Holder/6-7.png" alt="360ml Ripple Cups"
+                class="h-full object-contain">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl text-dark mb-2">360ml Ripple Cups</h3>
+              <p class="text-gray-600 mb-4">Textured for insulation, these cups elevate your drinking experience with a
+                touch of style and practicality.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-medium">Textured grip</span>
+                <a href="contactus.html"
+                  class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-300 text-sm">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-orange-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Our Products</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Quality and sustainability in every cup</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Premium Quality</h3>
+            <p class="text-gray-600">Manufactured with food-grade materials that meet international safety standards.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.1s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Eco-Friendly</h3>
+            <p class="text-gray-600">Sustainable options including biodegradable and compostable materials.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.2s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Custom Branding</h3>
+            <p class="text-gray-600">Print your logo and designs to enhance brand visibility.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 animate__animated animate__fade-in-up"
+            style="animation-delay: 0.3s">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-3">Bulk Discounts</h3>
+            <p class="text-gray-600">Competitive pricing with special discounts for large orders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Order Premium Paper Cups?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today for competitive pricing and bulk order discounts.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="https://wa.me/919891257954"
+            class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 animate__animated animate__pulse animate__infinite">
+            Get a Quote
+          </a>
+          <a href="tel:+919891257954"
+            class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+            Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Accordion functionality
+      document.querySelectorAll('.accordion-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('svg');
+
+          // Toggle content visibility
+          content.classList.toggle('hidden');
+
+          // Rotate icon
+          icon.classList.toggle('rotate-180');
+
+          // Close other open accordions
+          document.querySelectorAll('.accordion-btn').forEach(otherButton => {
+            if (otherButton !== button) {
+              otherButton.nextElementSibling.classList.add('hidden');
+              otherButton.querySelector('svg').classList.remove('rotate-180');
+            }
+          });
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Scroll animations
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate__animated');
+
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition < windowHeight - 100) {
+            const animation = element.classList.contains('animate__fade-in-up') ? 'animate__fadeInUp' :
+              element.classList.contains('animate__fade-in') ? 'animate__fadeIn' : '';
+
+            if (animation) {
+              element.classList.add(animation);
+            }
+          }
+        });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+    </script>
+  </div>
+  <!-- paper-cup-holder-end here -->
+
+
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="assests/pdfs/led_lighting pdf.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">📄
+          SMD LED
+          Lighting</a>
+        <a href="assests/pdfs/led_Driver.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">📄 SMD LED
+          Driver</a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+  <script src="assests/js/paper-product.js"></script>
+</body>

@@ -1,0 +1,2082 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="assests/images/extra img/polypack-logo.png" ref="assests/images/extra img/polypack-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/assests/css/index.css">
+  <link rel="stylesheet" href="assests/css/styless.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title> PolyPack Enterprises</title>
+
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+  <style type="text/css">
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+
+    .service-box {
+      transition: all 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar-header {
+      position: sticky !important;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: #fff;
+      /* Ensure background is set */
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <!--NAV SECTION START HERE..-->
+  <div id="navbar-header"></div>
+  <!-- Other content -->
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const navbarHeader = document.getElementById('navbar-header');
+        navbarHeader.innerHTML = data;
+
+        // Force reflow to ensure sticky positioning is applied
+        navbarHeader.offsetHeight; // Trigger reflow
+        navbarHeader.classList.add('sticky'); // Ensure sticky class is applied
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <!--NAV SECTION END HERE..-->
+
+
+
+  <!-- banner section start here -->
+  <style>
+    .full-viewport-width {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+
+    .slider-transition {
+      transition: transform 0.5s ease-in-out;
+    }
+  </style>
+
+  <div class="overflow-x-hidden">
+    <!-- Full width slider container -->
+    <div class="full-viewport-width relative overflow-hidden h-[60vh]">
+      <!-- Slider with 5 slides -->
+      <div class="flex h-full slider-transition" id="slider">
+        <!-- Slide 1 - Food Boxes -->
+        <div class="w-full flex-shrink-0 relative">
+          <div class="w-full h-full bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <div class="text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Eco-Friendly Food Boxes</h2>
+                <p class="text-xl md:text-2xl text-white mb-8">100% biodegradable solutions for restaurants and cafes
+                </p>
+                <div
+                  class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-lg font-medium cursor-pointer transition duration-300 transform hover:scale-105">
+                  View Food Packaging</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Paper Bags -->
+        <div class="w-full flex-shrink-0 relative">
+          <div class="w-full h-full bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80')">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <div class="text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Premium Paper Bags</h2>
+                <p class="text-xl md:text-2xl text-white mb-8">Custom printed with your brand logo and colors</p>
+                <div
+                  class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-medium cursor-pointer transition duration-300 transform hover:scale-105">
+                  Explore Bag Options</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Shipping Materials -->
+        <div class="w-full flex-shrink-0 relative">
+          <div class="w-full h-full bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1581515286348-98549700294f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <div class="text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Industrial Shipping Solutions</h2>
+                <p class="text-xl md:text-2xl text-white mb-8">Heavy-duty packaging for all your shipping needs</p>
+                <div
+                  class="inline-block bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-lg font-medium cursor-pointer transition duration-300 transform hover:scale-105">
+                  See Shipping Materials</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 - Custom Packaging -->
+        <div class="w-full flex-shrink-0 relative">
+          <div class="w-full h-full bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1602524818607-f2a0a0a9d049?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <div class="text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Custom Packaging</h2>
+                <p class="text-xl md:text-2xl text-white mb-8">Tailored solutions for your specific products</p>
+                <div
+                  class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-lg font-medium cursor-pointer transition duration-300 transform hover:scale-105">
+                  Design Your Packaging</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 - Sustainable Materials -->
+        <div class="w-full flex-shrink-0 relative">
+          <div class="w-full h-full bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <div class="text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Sustainable Materials</h2>
+                <p class="text-xl md:text-2xl text-white mb-8">Environmentally responsible packaging solutions</p>
+                <div
+                  class="inline-block bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-lg font-medium cursor-pointer transition duration-300 transform hover:scale-105">
+                  Learn About Sustainability</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Controls -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+        <div class="slider-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 cursor-pointer"
+          data-index="0"></div>
+        <div class="slider-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 cursor-pointer"
+          data-index="1"></div>
+        <div class="slider-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 cursor-pointer"
+          data-index="2"></div>
+        <div class="slider-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 cursor-pointer"
+          data-index="3"></div>
+        <div class="slider-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 cursor-pointer"
+          data-index="4"></div>
+      </div>
+
+      <!-- Arrow Navigation -->
+      <div
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 p-3 rounded-full shadow-md z-10 cursor-pointer"
+        id="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+      <div
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 p-3 rounded-full shadow-md z-10 cursor-pointer"
+        id="next">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+
+    <script>
+      const slider = document.getElementById('slider');
+      const prevControl = document.getElementById('prev');
+      const nextControl = document.getElementById('next');
+      const dots = document.querySelectorAll('.slider-dot');
+
+      let currentIndex = 0;
+      const slideCount = document.querySelectorAll('#slider > div').length;
+      let autoSlideInterval;
+
+      function goToSlide(index) {
+        currentIndex = (index + slideCount) % slideCount;
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Update dots
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('bg-opacity-100', i === currentIndex);
+          dot.classList.toggle('bg-opacity-50', i !== currentIndex);
+        });
+
+        // Reset auto-slide timer
+        resetAutoSlide();
+      }
+
+      function nextSlide() {
+        goToSlide(currentIndex + 1);
+      }
+
+      function prevSlide() {
+        goToSlide(currentIndex - 1);
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 5000);
+      }
+
+      // Event listeners
+      nextControl.addEventListener('click', nextSlide);
+      prevControl.addEventListener('click', prevSlide);
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          goToSlide(parseInt(dot.getAttribute('data-index')));
+        });
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+      });
+
+      // Initialize
+      goToSlide(0);
+      resetAutoSlide();
+
+      // Pause on hover
+      slider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+      slider.addEventListener('mouseleave', resetAutoSlide);
+    </script>
+  </div>
+  <!-- banner section end here -->
+
+
+  <!-- about us start -->
+  <section
+    class="overflow-hidden py-8 bg-gray-200 sm:py-12 px-4 sm:px-6 lg:px-8 bg-[linear-gradient(120deg,_#1f2937_55%,_transparent_55%)]">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
+          <div class="text-center lg:text-left">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+              <span class="text-orange-400">About</span><span class="text-white"> Us</span>
+            </h3>
+            <p class="text-white text-base sm:text-lg leading-relaxed sm:leading-loose">
+              At POLY PACK ENTERPRISES, we are global specialists in packaging solutions for the food and beverage
+              industry. With a deep commitment to innovation, quality, and sustainability, we go beyond simply wrapping
+              products—we help build brands, ensure product integrity, and create memorable consumer experiences.
+              <span class="block mt-3 sm:mt-4">
+                Our team works closely with clients to develop smart, customized packaging that not only meets
+                regulatory standards but also supports their marketing and operational goals. From concept to shelf, we
+                ensure consistency, reliability, and excellence at every step.
+              </span>
+            </p>
+
+            <div
+              class="mt-6 sm:mt-8 inline-block bg-orange-400 hover:bg-orange-300 text-black px-6 sm:px-8 py-2 sm:py-3 rounded-full shadow-md transition duration-300">
+              <a href="about.html" class="flex items-center gap-2 text-sm sm:text-base font-medium">
+                READ MORE
+                <i class="fas fa-long-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+
+        <div class="w-full lg:w-1/2">
+          <div class="relative group overflow-hidden rounded-xl shadow-2xl">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+            </div>
+            <img src="assests/images/extra img/steptodown.com622617.jpg" alt="About Poly Pack Enterprises"
+              class="w-full h-auto sm:h-[400px] md:h-[450px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              loading="lazy">
+
+            <!-- Floating Badge -->
+            <div
+              class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
+              <span class="text-sm font-medium text-gray-800">Since 2016</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- about us end  -->
+
+
+
+  <!-- made in india Section Start -->
+  <div class="bg-cover bg-fixed p-4 sm:p-6 md:p-10"
+    style="background-image: url('assests/images/extra img/madeinindiabg.jpg');">
+    <!-- Content Container -->
+    <div
+      class="flex flex-col lg:flex-row justify-between gap-6 md:gap-8 rounded-3xl mx-auto my-4 sm:my-6 md:my-10 backdrop-blur-[20px] p-4 sm:p-6 md:p-10 max-w-7xl">
+      <!-- Text Content -->
+      <div class="w-full lg:w-1/2 flex flex-col items-start">
+        <div class="flex flex-col gap-2 md:gap-4 w-full">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center lg:text-left">Made In India,</h2>
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-500 lion-gradient-text text-center lg:text-left">
+            Shipped Globally</h2>
+          <p class="text-white mt-2 md:mt-4 text-sm sm:text-base md:text-lg text-center lg:text-left">
+            Packaging that Builds Brands, Protects Products, and Delivers Trust. The deeper value of packaging — not
+            just covering a product, but enhancing the entire brand and consumer experience.
+          </p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="w-full mt-6 md:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+          <!-- Stat 1 -->
+          <div class="p-3 sm:p-4 border-2 border-orange-500 rounded-3xl bg-gray-600/80 text-white text-center">
+            <p class="text-orange-500 text-xs sm:text-sm md:text-base">Serving</p>
+            <h4 class="text-2xl sm:text-3xl md:text-4xl font-bold">10000+</h4>
+            <p class="text-xs sm:text-sm">Project Completed</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="p-3 sm:p-4 border-2 border-orange-500 rounded-3xl bg-gray-600/80 text-white text-center">
+            <p class="text-orange-500 text-xs sm:text-sm md:text-base">Employees</p>
+            <h4 class="text-2xl sm:text-3xl md:text-4xl font-bold">50+</h4>
+            <p class="text-xs sm:text-sm">Workers Employed</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="p-3 sm:p-4 border-2 border-orange-500 rounded-3xl bg-gray-600/80 text-white text-center">
+            <p class="text-orange-500 text-xs sm:text-sm md:text-base">Over</p>
+            <h4 class="text-2xl sm:text-3xl md:text-4xl font-bold">9+</h4>
+            <p class="text-xs sm:text-sm">Years of Experience</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="p-3 sm:p-4 border-2 border-orange-500 rounded-3xl bg-gray-600/80 text-white text-center">
+            <p class="text-orange-500 text-xs sm:text-sm md:text-base">5000+</p>
+            <h4 class="text-2xl sm:text-3xl md:text-4xl font-bold">Happy</h4>
+            <p class="text-xs sm:text-sm">Client</p>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="w-full mt-6 md:mt-8 flex justify-center  items-center ">
+          <button onclick="openQuoteForm()"
+            class="px-6 sm:px-8 py-2 sm:py-3 bg-gray-600 hover:bg-orange-500 text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-orange-500/50 text-sm sm:text-base">
+            Get Quote
+          </button>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full lg:w-1/2 flex items-center justify-center p-2 sm:p-4 md:p-6 lg:p-8">
+        <img class="w-full max-w-lg transform duration-500 hover:rotate-3 rounded-2xl md:rounded-3xl shadow-xl"
+          src="assests/new-images/images/banner/new-made-in-india-Banner.png" alt="Made in India">
+      </div>
+    </div>
+  </div>
+  <!-- Made in India Section End -->
+
+
+
+  <!-- Quote Modal section start here -->
+  <div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+    <div class="bg-white rounded-xl w-[90%] max-w-xl p-6 relative shadow-lg max-sm:p-4 max-sm:max-w-[95%]">
+      <!-- Close Button -->
+      <button id="closeQuote"
+        class="absolute top-4 right-4 text-2xl font-bold text-gray-600 hover:text-red-500 max-sm:text-xl">
+        ×
+      </button>
+
+      <!-- Heading -->
+      <div class="text-center mb-6 max-sm:mb-4">
+        <h2 class="text-2xl font-bold text-gray-800 max-sm:text-xl">Let’s Connect</h2>
+        <p class="text-gray-500 text-sm max-sm:text-xs">Get a Quick Quote</p>
+      </div>
+
+      <!-- Form -->
+      <form class="space-y-4 max-sm:space-y-2">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 max-sm:text-xs">Full Name</label>
+          <input type="text"
+            class="w-full mt-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none max-sm:text-sm max-sm:px-2"
+            placeholder="Enter your name" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 max-sm:text-xs">Email Address</label>
+          <input type="email"
+            class="w-full mt-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none max-sm:text-sm max-sm:px-2"
+            placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 max-sm:text-xs">Phone Number</label>
+          <input type="tel"
+            class="w-full mt-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none max-sm:text-sm max-sm:px-2"
+            placeholder="Enter your phone" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 max-sm:text-xs">Company Name</label>
+          <input type="text"
+            class="w-full mt-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none max-sm:text-sm max-sm:px-2"
+            placeholder="Your company name">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 max-sm:text-xs">Your Message</label>
+          <textarea
+            class="w-full mt-1 border border-gray-300 rounded-lg px-4 py-2 h-24 focus:ring-2 focus:ring-orange-500 focus:outline-none max-sm:text-sm max-sm:px-2 max-sm:h-20"
+            placeholder="Write your message..." required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+          class="min-h-[36px] pl-[28px] pr-[44px] shadow-lg bg-black rounded-[32px] hover:bg-orange-500 cursor-pointer flex items-center justify-center relative group bg-gradient-lion shadow-orange-500 overflow-hidden hover:ring-[1px] hover:ring-lion-1 text-white max-sm:px-6 max-sm:text-sm">
+          <span class="z-30">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- Get Quote Section End here -->
+
+
+  <!-- WHY CHOOSE US SECTION START -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-orange-50 to-white py-12 lg:py-16 px-4 lg:px-20">
+    <!-- Floating decorative elements -->
+    <div
+      class="absolute top-10 left-10 w-20 h-20 rounded-full bg-orange-100 opacity-30 animate-float animation-delay-2000">
+    </div>
+    <div
+      class="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-orange-200 opacity-20 animate-float animation-delay-3000">
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <!-- Top decorative element -->
+        <div class="flex justify-center mb-6">
+          <div class="w-16 h-1.5 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full"></div>
+        </div>
+
+        <!-- Main heading with gradient text effect -->
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-orange-500">
+            WHY CHOOSE <span class="whitespace-nowrap">POLYPACK ENTERPRISES?</span>
+          </span>
+        </h2>
+
+        <!-- Description text -->
+        <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base lg:text-lg leading-relaxed">
+          Delivering high-quality, customized packaging solutions with speed, precision, and professionalism — trusted
+          by brands worldwide.
+        </p>
+
+        <!-- Bottom decorative element -->
+        <div class="flex justify-center mt-6">
+          <div class="w-16 h-1.5 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full"></div>
+        </div>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <!-- Feature 1 - Transparency -->
+        <div
+          class="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-white to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative z-10 p-6 flex flex-col items-center text-center">
+            <div
+              class="mb-5 w-24 h-24 rounded-2xl bg-white shadow-lg flex items-center justify-center group-hover:bg-orange-500 transition-colors duration-300 border-2 border-orange-400 group-hover:border-orange-500">
+              <i class="fa fa-box text-orange-500 text-3xl group-hover:text-white transition-colors duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+              Transparency</h3>
+            <p class="text-gray-600 text-sm md:text-base">Fair pricing and open communication at every stage of the
+              process — from design to delivery.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 - Reliability -->
+        <div
+          class="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-white to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative z-10 p-6 flex flex-col items-center text-center">
+            <div
+              class="mb-5 w-24 h-24 rounded-2xl bg-white shadow-lg flex items-center justify-center group-hover:bg-orange-500 transition-colors duration-300 border-2 border-orange-400 group-hover:border-orange-500">
+              <i class="fa fa-heart text-orange-500 text-3xl group-hover:text-white transition-colors duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+              Reliability</h3>
+            <p class="text-gray-600 text-sm md:text-base">Consistently high standards in quality, safety, and
+              performance across all packaging solutions.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 - Customization -->
+        <div
+          class="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-white to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative z-10 p-6 flex flex-col items-center text-center">
+            <div
+              class="mb-5 w-24 h-24 rounded-2xl bg-white shadow-lg flex items-center justify-center group-hover:bg-orange-500 transition-colors duration-300 border-2 border-orange-400 group-hover:border-orange-500">
+              <i class="fa fa-tools text-orange-500 text-3xl group-hover:text-white transition-colors duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+              Customization</h3>
+            <p class="text-gray-600 text-sm md:text-base">Flexible packaging options tailored to your product, brand,
+              and market needs.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 - Technical Support -->
+        <div
+          class="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-white to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative z-10 p-6 flex flex-col items-center text-center">
+            <div
+              class="mb-5 w-24 h-24 rounded-2xl bg-white shadow-lg flex items-center justify-center group-hover:bg-orange-500 transition-colors duration-300 border-2 border-orange-400 group-hover:border-orange-500">
+              <i
+                class="fa fa-headset text-orange-500 text-3xl group-hover:text-white transition-colors duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+              Technical Support</h3>
+            <p class="text-gray-600 text-sm md:text-base">Expert help choosing materials, formats, and features for
+              packaging success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+
+    .animation-delay-3000 {
+      animation-delay: 3s;
+    }
+
+    /* Hover effect for feature cards */
+    .group:hover .feature-icon {
+      transform: scale(1.1) rotate(5deg);
+    }
+  </style>
+  <!-- WHY CHOOSE US SECTION END -->
+
+  <!-- what makes different section start here -->
+
+  <div class="bg-orange-50 lg:px-10 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Left Column -->
+        <div class="lg:w-1/2 flex flex-col md:flex-row gap-6 p-6">
+          <div class="flex-1">
+            <h1 class="text-3xl md:text-4xl font-bold text-orange-800 mb-6 animate-fadeIn">
+              What makes Polypack different?
+            </h1>
+            <p class="text-gray-700 mb-8 leading-relaxed animate-fadeIn delay-100">
+              Polypack specializes in high-performance packaging solutions engineered for modern automated production
+              lines.
+              Our precision-engineered packaging ensures seamless integration with automated packing machines,
+              maximizing
+              line efficiency and minimizing downtime. With our dedicated team of packaging engineers and quality
+              assurance
+              specialists, we deliver consistent, high-quality packaging solutions that meet the most demanding
+              production
+              schedules.
+            </p>
+
+            <div class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  class="bg-orange-100 p-4 rounded-lg border-l-4 border-orange-500 hover:scale-105 transition-transform duration-300 animate-fadeIn delay-200">
+                  <h6 class="font-semibold text-orange-800">Advanced Barrier Protection</h6>
+                  <p class="text-sm text-gray-600 mt-1">Multi-layer films for superior product preservation</p>
+                </div>
+                <div
+                  class="bg-gray-100 p-4 rounded-lg border-l-4 border-gray-400 hover:scale-105 transition-transform duration-300 animate-fadeIn delay-300">
+                  <h6 class="font-semibold text-gray-800">Custom-Engineered Solutions</h6>
+                  <p class="text-sm text-gray-600 mt-1">Tailored packaging for specific product requirements</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  class="bg-gray-100 p-4 rounded-lg border-l-4 border-gray-400 hover:scale-105 transition-transform duration-300 animate-fadeIn delay-400">
+                  <h6 class="font-semibold text-gray-800">Sustainable Materials</h6>
+                  <p class="text-sm text-gray-600 mt-1">Eco-friendly options including recyclable and compostable films
+                  </p>
+                </div>
+                <div
+                  class="bg-orange-100 p-4 rounded-lg border-l-4 border-orange-500 hover:scale-105 transition-transform duration-300 animate-fadeIn delay-500">
+                  <h6 class="font-semibold text-orange-800">Smart Packaging Technology</h6>
+                  <p class="text-sm text-gray-600 mt-1">Integrated sensors and tracking capabilities</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  class="bg-orange-100 p-4 rounded-lg border-l-4 border-orange-500 hover:scale-105 transition-transform duration-300 animate-fadeIn delay-600">
+                  <h6 class="font-semibold text-orange-800">High-Speed Compatibility</h6>
+                  <p class="text-sm text-gray-600 mt-1">Optimized for automated filling at 200+ units/minute</p>
+                </div>
+                <div
+                  class="bg-gray-100 p-4 rounded-lg border-l-4 border-gray-400 hover:scale-105 transition-transform duration-300 animate-fadeIn delay-700">
+                  <h6 class="font-semibold text-gray-800">Tamper-Evident Features</h6>
+                  <p class="text-sm text-gray-600 mt-1">Built-in security for product integrity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden md:block h-auto w-px bg-orange-200 mx-4"></div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="lg:w-1/2 p-6 space-y-6">
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 animate-slideInRight delay-100">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-4 md:mb-0">
+                <h5 class="font-bold text-orange-700">RESPONSE TIME</h5>
+                <p class="text-gray-600">Technical support response</p>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium animate-pulse">
+                  Under 30 minutes
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 animate-slideInRight delay-200">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-4 md:mb-0">
+                <h5 class="font-bold text-orange-700">MATERIAL SCIENCE</h5>
+                <p class="text-gray-600">Advanced polymer formulations</p>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium">
+                  Oxygen & Moisture Barrier
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 animate-slideInRight delay-300">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-4 md:mb-0">
+                <h5 class="font-bold text-orange-700">SUSTAINABILITY</h5>
+                <p class="text-gray-600">Eco-conscious solutions</p>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium">
+                  PCR Content Available
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 animate-slideInRight delay-400">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-4 md:mb-0">
+                <h5 class="font-bold text-orange-700">INNOVATION</h5>
+                <p class="text-gray-600">Cutting-edge packaging tech</p>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium">
+                  Active Packaging Systems
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 animate-slideInRight delay-500">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-4 md:mb-0">
+                <h5 class="font-bold text-orange-700">CUSTOMER RETENTION</h5>
+                <p class="text-gray-600">Client satisfaction rate</p>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium animate-pulse">
+                  98% Retention Rate
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    .animate-slideInRight {
+      animation: slideInRight 0.5s ease-out forwards;
+    }
+
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    .delay-400 {
+      animation-delay: 0.4s;
+    }
+
+    .delay-500 {
+      animation-delay: 0.5s;
+    }
+
+    .delay-600 {
+      animation-delay: 0.6s;
+    }
+
+    .delay-700 {
+      animation-delay: 0.7s;
+    }
+  </style>
+  <!-- what makes different section end here -->
+
+
+  <!-- FAQ SECTION START -->
+  <section class="relative overflow-hidden px-4 py-10 lg:px-10 bg-cover bg-center bg-no-repeat"
+    style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.97)), url('assests/images/backgrounds/3.jpg');">
+
+    <!-- Animated background elements -->
+    <div class="absolute top-0 left-0 w-full h-full">
+      <div
+        class="absolute top-20 left-10 w-16 h-16 rounded-full bg-orange-100 opacity-20 animate-blob animation-delay-2000">
+      </div>
+      <div
+        class="absolute bottom-20 right-10 w-20 h-20 rounded-full bg-orange-200 opacity-15 animate-blob animation-delay-3000">
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="flex flex-col lg:flex-row gap-10 lg:gap-16">
+
+        <!-- Left Side: Video -->
+        <div class="w-full lg:w-1/2">
+          <div
+            class="relative group overflow-hidden rounded-xl shadow-2xl  mt-7 transform transition-all duration-500 hover:shadow-orange-300/30 hover:-translate-y-1">
+            <video id="video" class="w-full aspect-video   rounded-xl" loop autoplay muted
+              poster="assets/images/creatives/home-vedio.jpeg">
+              <source src="assests/video/poly.mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+              <h3
+                class="text-white text-xl font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                Our Packaging Solutions
+              </h3>
+            </div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div
+                class="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-play text-orange-500 text-2xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: FAQ -->
+        <div class="w-full lg:w-1/2 mt-4">
+          <!-- FAQ Header -->
+          <div class="mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
+              <span class="relative">
+                <span class="relative z-10">Frequently Asked</span>
+                <span
+                  class="absolute bottom-0 left-0 w-full h-3 bg-orange-100 opacity-50 -z-0 transform translate-y-1"></span>
+              </span>
+              <span class="text-orange-500">Questions</span>
+            </h2>
+            <div class="w-24 h-1.5 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full"></div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div
+              class="accordion-item overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+              <button class="accordion-header w-full flex justify-between items-center p-3.5 text-left group">
+                <span
+                  class="text-base md:text-lg font-medium text-gray-800 group-hover:text-orange-600 transition-colors">What
+                  types of packaging products do you manufacture?</span>
+                <i class="fa-solid fa-chevron-down text-orange-500 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 text-gray-600 text-sm md:text-base">
+                  We offer a wide range of food packaging solutions including bakery boxes, paper containers, sealing
+                  machines, crystal jars, aluminum foil paper, and disposable wooden cutlery.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+              class="accordion-item overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+              <button class="accordion-header w-full flex justify-between items-center p-3.5 text-left group">
+                <span
+                  class="text-base md:text-lg font-medium text-gray-800 group-hover:text-orange-600 transition-colors">Are
+                  your packaging products food-safe and customizable?</span>
+                <i class="fa-solid fa-chevron-down text-orange-500 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 text-gray-600 text-sm md:text-base">
+                  Yes, all our products are made from <strong class="text-orange-500">food-grade materials</strong> and
+                  can be customized with your branding, size, and design preferences.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+              class="accordion-item overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+              <button class="accordion-header w-full flex justify-between items-center p-3.5 text-left group">
+                <span
+                  class="text-base md:text-lg font-medium text-gray-800 group-hover:text-orange-600 transition-colors">Do
+                  you provide eco-friendly packaging options?</span>
+                <i class="fa-solid fa-chevron-down text-orange-500 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 text-gray-600 text-sm md:text-base">
+                  Absolutely. We offer biodegradable and sustainable packaging solutions such as <strong
+                    class="text-orange-500">paper containers and wooden cutlery</strong> to support environmentally
+                  conscious businesses.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div
+              class="accordion-item overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+              <button class="accordion-header w-full flex justify-between items-center p-3.5 text-left group">
+                <span
+                  class="text-base md:text-lg font-medium text-gray-800 group-hover:text-orange-600 transition-colors">Can
+                  your products be shipped internationally?</span>
+                <i class="fa-solid fa-chevron-down text-orange-500 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 text-gray-600 text-sm md:text-base">
+                  Yes, our packaging is <strong class="text-orange-500">Made in India and Shipped Globally</strong>,
+                  with quality and compliance that meet international standards.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    /* Animation for background blobs */
+    @keyframes blob {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      33% {
+        transform: translate(20px, -20px) scale(1.1);
+      }
+
+      66% {
+        transform: translate(-10px, 10px) scale(0.9);
+      }
+    }
+
+    .animate-blob {
+      animation: blob 7s ease-in-out infinite;
+    }
+
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+
+    .animation-delay-3000 {
+      animation-delay: 3s;
+    }
+
+    /* Accordion styles */
+    .accordion-item.active .accordion-header i {
+      transform: rotate(180deg);
+    }
+
+    .accordion-item.active .accordion-content {
+      max-height: 300px;
+    }
+
+    /* Video hover effect */
+    .yt-video:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 25px rgba(255, 94, 20, 0.2);
+    }
+  </style>
+  <!-- FAQ SECTION END -->
+
+
+
+
+  <!-- OUR SERVICES SECTION START -->
+  <div class="font-poppins bg-orange-50">
+    <!-- Our Services Section -->
+    <section class="relative overflow-hidden px-4 py-12 xl:mx-auto bg-cover bg-center bg-no-repeat"
+      style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.97)), url('assets/images/backgrounds/3.jpg');">
+
+      <!-- Animated background elements -->
+      <div
+        class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-orange-100 opacity-20 mix-blend-multiply animate-blob animation-delay-2000">
+      </div>
+      <div
+        class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-orange-200 opacity-20 mix-blend-multiply animate-blob">
+      </div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Section Heading -->
+        <div class="text-center mb-12">
+          <span class="text-primary font-medium text-sm tracking-wider">WHAT WE OFFER</span>
+          <h2 class="mt-1 text-3xl md:text-4xl font-bold text-dark">
+            <span class="relative inline-block">
+              <span class="relative z-10">Our <span class="text-primary">Services</span></span>
+              <span class="absolute bottom-0 left-0 w-full h-2 bg-light opacity-50 -z-0 transform translate-y-1"></span>
+            </span>
+          </h2>
+          <div class="mt-4 flex justify-center">
+            <div class="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Service Content -->
+        <div class="flex flex-col lg:flex-row items-start justify-center gap-6 md:gap-8 max-w-7xl">
+          <!-- Left Column -->
+          <div class="flex flex-col gap-6 w-full lg:w-1/3">
+            <!-- Service Box 1 -->
+            <div
+              class="service-box group relative p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary overflow-hidden">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-light to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10 flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-2 border-primary p-2 rounded-md group-hover:bg-primary transition-colors duration-200">
+                    <i
+                      class="fas fa-desktop text-primary group-hover:text-white text-xl transition-colors duration-200"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-dark group-hover:text-primary transition-colors duration-200">
+                    <p class="before:absolute before:inset-0">Custom Paper Packaging</p>
+                  </h3>
+                  <p class="mt-1 text-gray-600 text-xs leading-snug">Eco-friendly paper packaging tailored to your
+                    product needs, ensuring sustainability and brand appeal.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Box 2 -->
+            <div
+              class="service-box group relative p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary overflow-hidden">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-light to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10 flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-2 border-primary p-2 rounded-md group-hover:bg-primary transition-colors duration-200">
+                    <i
+                      class="fas fa-cubes text-primary group-hover:text-white text-xl transition-colors duration-200"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-dark group-hover:text-primary transition-colors duration-200">
+                    <p class="before:absolute before:inset-0">Food-Grade Containers</p>
+                  </h3>
+                  <p class="mt-1 text-gray-600 text-xs leading-snug">Safe, hygienic containers for food and beverage
+                    industries, designed for durability and compliance.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Box 3 -->
+            <div
+              class="service-box group relative p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary overflow-hidden">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-light to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10 flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-2 border-primary p-2 rounded-md group-hover:bg-primary transition-colors duration-200">
+                    <i
+                      class="fas fa-leaf text-primary group-hover:text-white text-xl transition-colors duration-200"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-dark group-hover:text-primary transition-colors duration-200">
+                    <p class="before:absolute before:inset-0">Sustainable Packaging</p>
+                  </h3>
+                  <p class="mt-1 text-gray-600 text-xs leading-snug">Environmentally responsible packaging solutions
+                    using biodegradable and recyclable materials.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle Image -->
+          <div class="w-full lg:w-1/3 flex justify-center my-6 lg:my-0">
+            <div class="relative">
+              <img src="assests/new-images/images/our-service-images.png" alt="Services"
+                class="max-w-[220px] md:max-w-[280px] h-auto rounded-lg shadow-xl animate-float"
+                style="animation-duration: 6s;">
+              <div class="absolute -z-10 -inset-3 bg-light rounded-xl opacity-30"></div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex flex-col gap-6 w-full lg:w-1/3">
+            <!-- Service Box 4 -->
+            <div
+              class="service-box group relative p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary overflow-hidden">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-light to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10 flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-2 border-primary p-2 rounded-md group-hover:bg-primary transition-colors duration-200">
+                    <i
+                      class="fas fa-shopping-bag text-primary group-hover:text-white text-xl transition-colors duration-200"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-dark group-hover:text-primary transition-colors duration-200">
+                    <p class="before:absolute before:inset-0">Retail Packaging</p>
+                  </h3>
+                  <p class="mt-1 text-gray-600 text-xs leading-snug">Custom-printed packaging that elevates brand
+                    visibility and enhances customer experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Box 5 -->
+            <div
+              class="service-box group relative p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary overflow-hidden">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-light to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10 flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-2 border-primary p-2 rounded-md group-hover:bg-primary transition-colors duration-200">
+                    <i
+                      class="fas fa-print text-primary group-hover:text-white text-xl transition-colors duration-200"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-dark group-hover:text-primary transition-colors duration-200">
+                    <p class="before:absolute before:inset-0">Custom Printing</p>
+                  </h3>
+                  <p class="mt-1 text-gray-600 text-xs leading-snug">High-quality printing services for logos, designs,
+                    and branding on various packaging materials.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Box 6 -->
+            <div
+              class="service-box group relative p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary overflow-hidden">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-light to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10 flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-2 border-primary p-2 rounded-md group-hover:bg-primary transition-colors duration-200">
+                    <i
+                      class="fas fa-box-open text-primary group-hover:text-white text-xl transition-colors duration-200"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-dark group-hover:text-primary transition-colors duration-200">
+                    <p class="before:absolute before:inset-0">Flexible Packaging</p>
+                  </h3>
+                  <p class="mt-1 text-gray-600 text-xs leading-snug">Versatile packaging solutions for food,
+                    pharmaceuticals, and other industries.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- OUR SERVICES SECTION End -->
+
+
+
+
+  <!-- our pRODUCT start here -->
+  <div class=" py-8 px-4 overflow-hidden bg-fixed"
+    style="background-image: url('https://plus.unsplash.com/premium_photo-1733266897023-8ef16ad9350a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="swiper-container relative max-w-7xl mx-auto">
+      <h3 class="text-5xl font-bold text-center py-4">
+        <span class="text-orange-500 ">Our</span> Products
+      </h3>
+
+      <div class="swiper-wrapper slider-is-here flex">
+        <!-- Product 1 -->
+        <div class="swiper-slide w-64 p-4 group ">
+          <a href="ledlightingmain.html"
+            class="block bg-white border border-gray-500 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/PVC Jar/1-26.png" alt="Led-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">PVC Jar</h6>
+          </a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="led-wall-light.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Pizza Box/12-plan-1.png" alt="Wall-Glass-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Pizza Box</h6>
+          </a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Garden-Spike-Light.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/aluminum-foil-paper.png" alt="Garden-Spike-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Aluminum Foil Paper</h6>
+          </a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Dual-Color-Panel-Lights.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/cake-boxes.png" alt="Dual-Color-Panel-Lights"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Cake Box</h6>
+          </a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="COB-Track-Light.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/meal tray/meal-tray1.webp" alt="cob-track-light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Meal Tray</h6>
+          </a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Astra-Panel-PC-Housing.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Sealing Machine/sealing.jpg" alt="Astra-Panel-PC-Housing"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Sealing Machine</h6>
+          </a>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Adjustable-frameless.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Baking Trays/baking3.png" alt="Adjustable-frameless"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Baking Tray</h6>
+          </a>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Slim-Panel.html"
+            class="block bg-white rounded-lg border border-gray-500 shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Burger  Sandwich Box/burger4.webp" alt="slim-pannel"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Baking Tray</h6>
+          </a>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="assests/new-images/images/products/Food Container/foodcontainer1.jpg"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/images/led-deep-down/leddeepdowner.png" alt="Led Deep Down"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Food Container</h6>
+          </a>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="LED-Flood-Light.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Burger  Sandwich Box/burger4.webp" alt="LED-Flood-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Burger Sandwich Box</h6>
+          </a>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="LED-Concealed-Light.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Disposable Wooden Cutlery And Spoon/2-22.png"
+                alt="LED-Concealed-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Disposable Wooden Spoon</h6>
+          </a>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Led-Bulkhead-Light.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/French Fires & Frankie Pouch/Untitled-design-35-1-1.png"
+                alt="Led-Bulkhead-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">French Fires Pouch</h6>
+          </a>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Dual-Color-Panel-Lights.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Moulding Container/4-13.png" alt="Dual-Color-Panel-Lights"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Moulding Container</h6>
+          </a>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Gate-Light.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Noodle Paper Boxes/1-12.png" alt="Gate-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Noodle Paper Box</h6>
+          </a>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="SYRO-Deep-Junction-Downlight.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Paper Container/Untitled-design-30.png"
+                alt="SYRO-Deep-Junction-Downlight"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Paper Container</h6>
+          </a>
+        </div>
+
+        <!-- Product 16 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="Surface-Panels.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Crystal-Jar.png" alt="Surface-panel"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Crystal Jar</h6>
+          </a>
+        </div>
+
+        <!-- Product 17 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="COB-Light.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Paper-Plate-Manufacturing.png" alt="COB-Light"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Paper Plate</h6>
+          </a>
+        </div>
+
+        <!-- Product 18 -->
+        <div class="swiper-slide w-64 p-4 group">
+          <a href="pcb.html"
+            class="block bg-white rounded-lg shadow-md border border-gray-500 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img src="assests/new-images/images/products/Paper-Cups--Manufacture.png" alt="pcb"
+                class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-90" />
+            </div>
+            <h6 class="text-lg font-semibold text-center py-3">Paper Cups</h6>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- our pRODUCT end here -->
+
+
+
+
+  <!-- testimonial start here -->
+  <div>
+    <section class="client-reviews overflow-hidden py-10 bg-orange-50 pt-10 px-4 md:px-10 lg:px-1">
+      <div class="adaptive max-w-7xl mx-auto px-4">
+        <div class="flex w-[100%]">
+          <div class="flex justify-start w-[50%]   ">
+            <h3 class="text-3xl  font-bold  ">
+              What our <span class="text-orange-500 ">Clients say about us</span>
+            </h3>
+
+          </div>
+          <div class="container w-[50%] ">
+            <!-- Add Review Button -->
+            <div class="flex justify-end  mb-4">
+              <button id="review-open-btn"
+                class="review-add-btn bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">
+                Add Review
+              </button>
+            </div>
+
+            <!-- Review Modal -->
+            <div id="review-modal"
+              class="review-modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+              <div class="review-form-container bg-white rounded-lg p-6 w-full max-w-lg relative">
+                <!-- Logo Top Left -->
+                <div class="review-logo absolute top-4 left-4">
+                  <img src="assests/images/extra img/polypack-logo.png" alt="Logo" class="h-10">
+                </div>
+                <!-- Close Button Top Right -->
+                <button id="review-close-btn"
+                  class="review-close-btn absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+                  <i class="fas fa-times text-xl"></i>
+                </button>
+                <!-- Form -->
+                <form id="review-form" class="review-form space-y-4 mt-12">
+                  <div class="review-field">
+                    <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="full-name" name="full-name"
+                      class="review-input mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+                      required>
+                  </div>
+                  <div class="review-field">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email ID</label>
+                    <input type="email" id="email" name="email"
+                      class="review-input mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+                      required>
+                  </div>
+                  <div class="review-field">
+                    <label for="company" class="block text-sm font-medium text-gray-700">Company Name</label>
+                    <input type="text" id="company" name="company"
+                      class="review-input mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div class="review-field">
+                    <label class="block text-sm font-medium text-gray-700">Your Rating</label>
+                    <div class="review-stars flex gap-1 text-amber-300 mt-1">
+                      <i class="fas fa-star cursor-pointer" data-value="1"></i>
+                      <i class="fas fa-star cursor-pointer" data-value="2"></i>
+                      <i class="fas fa-star cursor-pointer" data-value="3"></i>
+                      <i class="fas fa-star cursor-pointer" data-value="4"></i>
+                      <i class="fas fa-star cursor-pointer" data-value="5"></i>
+                      <input type="hidden" id="rating" name="rating" value="0" required>
+                    </div>
+                  </div>
+                  <div class="review-field">
+                    <label for="feedback" class="block text-sm font-medium text-gray-700">Write Your Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                      class="review-input mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+                      required></textarea>
+                  </div>
+                  <div class="review-submit">
+                    <button type="submit"
+                      class="review-submit-btn bg-orange-500 text-white px-4 py-2 rounded-lg w-full hover:bg-orange-600 transition">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="testimonial-swiper py-5  overflow-hidden  ">
+          <div class="swiper-wrapper mx-3  ">
+            <!-- Slide 1 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px]  p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"The noodles boxes and burger packaging boxes we ordered look
+                  professional and keep the food fresh. Our customers love them!"</p>
+                <p class="text-xl text-blue-950 font-semibold ">Anita Sharma</p>
+                <div class="stars flex gap-1 mt-2.5 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px]  p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"Amazing quality paper bags! They’re sturdy, eco-friendly, and
+                  perfect for our takeaway food business. Highly recommended!"
+                </p>
+                <p class="text-xl text-blue-950 font-semibold">Mohit Deol</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">“"We’ve been ordering paper cup holders and containers
+                  regularly – always delivered on time and never a compromise on quality."</p>
+                <p class="text-xl text-blue-950 font-semibold">Ayush Tyagi</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"Reliable supplier for all our bakery packaging needs. Their
+                  boxes are elegant and durable – perfect for cakes and pastries."</p>
+                <p class="text-xl text-blue-950 font-semibold">Sourabh Kumar</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"We switched to their aluminium foil and wooden cutlery for our
+                  restaurant – it was the best decision for both presentation and sustainability."</p>
+                <p class="text-xl text-blue-950 font-semibold">Sanjeet Kumar</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 6-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"The sealing machine we bought from them works flawlessly.
+                  Makes our packaging process faster and more hygienic."</p>
+                <p class="text-xl text-blue-950 font-semibold">Ishant Sharma</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 7-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"They offer a wide range of products – from paper cups to
+                  containers – all under one roof. Super convenient for our café business."</p>
+                <p class="text-xl text-blue-950 font-semibold">Amit Kumar</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 8-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"Customer service is top-notch. They helped us customize our
+                  packaging and the final product was just what we envisioned."</p>
+                <p class="text-xl text-blue-950 font-semibold">Ankur Chauhan</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 9-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">“From ordering to delivery, everything was smooth. The quality
+                  of their disposable wooden cutlery exceeded our expectations."</p>
+                <p class="text-xl text-blue-950 font-semibold">Anita Sharma</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 10-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"Their paper boxes are the perfect mix of strength and style.
+                  Our food stays fresh, and the branding looks fantastic!"</p>
+                <p class="text-xl text-blue-950 font-semibold">Harshit Vishnoi</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 11-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"We've been using their paper containers for months now –
+                  leak-proof, eco-friendly, and very affordable in bulk."</p>
+                <p class="text-xl text-blue-950 font-semibold">Indra Mishra</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!--Slide 12-->
+            <div class="swiper-slide flex justify-center">
+              <div class="w-full h-[210px] p-6 shadow-2xl bg-white">
+                <p class="text-start text-gray-700 mb-4">"Their bakery boxes add a premium touch to our products.
+                  Customers often compliment the packaging as much as the cakes!"</p>
+                <p class="text-xl text-blue-950 font-semibold">Manisha Gupta</p>
+                <div class="stars flex gap-1 text-amber-300">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- testimonial End here -->
+
+
+
+  <!--CERTIFICATION START HERE-->
+  <div class="certification text-center flex flex-col gap-7  font-bold   bg-cover bg-center bg-no-repeat bg-fixed"
+    style="background-image: url('https://steptodown.com/shutterstock-downloader/images/steptodown.com568494.jpg');">
+    <div class="pt-10">
+      <h2 class="relative text-center mb-4">
+        <span
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-[57px] h-[15px] border-[5px] border-x-[5px] border-t-[5px] border-b-0 border-[#ff5e14]"></span>
+      </h2>
+      <h1 class="text-4xl font-bold text-black">Certification</h1>
+      <h2 class="heading text-center text-xl font-bold relative mb-10">
+        <span class="block border-b-[5px] border-[#ff5e14] w-[57px] mx-auto pt-[5px]"></span>
+      </h2>
+
+
+    </div>
+
+    <!-- Responsive grid: min 2 columns on all screens -->
+    <div
+      class="grid mx-11 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center px-5 pb-[100px]">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream-1.png" alt="Frame 1" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream2.png" alt="Frame 2" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream3.png" alt="Frame 3" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream4.png" alt="Frame 4" onclick="openModal(this)">
+      <img class="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto cursor-pointer"
+        src="assests/images/CERTIFICATION/Fream5.png" alt="Frame 5" onclick="openModal(this)">
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+      <div class="flex justify-center items-center w-full h-full">
+        <img id="modalImage" class="w-auto h-auto max-w-full max-h-full object-contain" src="" alt="Full Image">
+      </div>
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-white font-bold text-2xl">X</button>
+    </div>
+  </div>
+  <!--CERTIFICATION END HERE-->
+
+
+  <!-- solution section start here -->
+  <div class="bg-gray-100 bg-center" style="background-image: url('assests/images/backgrounds/3.jpg');">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-6 lg:py-5">
+      <div class="flex flex-col xl:flex-row gap-2 lg:gap-2">
+        <!-- Text Content (same as before) -->
+        <div class="w-full xl:w-7/12 p-4 md:p-6 lg:p-8">
+          <h5 class="text-base sm:text-lg md:text-xl font-semibold uppercase tracking-wider pb-2 text-gray-700">
+            Solution
+            for a GREEN Planet</h5>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-black mb-4 sm:mb-6">
+            "Eco-friendly packaging that supports a cleaner, greener global future."</h1>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-3 py-1 sm:py-3">
+            <div class="bg-blue-500 hover:bg-blue-600 transition p-3 sm:p-4 rounded-lg shadow-sm">
+              <h5 class="font-bold text-white text-base sm:text-lg flex items-center gap-2">
+                <span class="text-white"><i class="fas fa-ranking-star"></i></span> COMPOSTABLE
+              </h5>
+              <p class="text-white text-sm sm:text-base mt-2">The material in these product are industrially
+                compostable within 90 days.
+              </p>
+            </div>
+
+            <div class="bg-green-500 hover:bg-green-600 transition p-3 sm:p-4 rounded-lg shadow-sm">
+              <h5 class="font-bold text-base text-white sm:text-lg flex items-center gap-2">
+                <span class="text-white"><i class="fas fa-medal"></i></span> Recyclable
+              </h5>
+              <p class="text-white font-medium text-sm sm:text-base mt-2">The plastic lids/window films used for these
+                product
+                are recyclable.</p>
+            </div>
+
+            <div class="bg-pink-500 hover:bg-pink-600 transition p-3 sm:p-4 rounded-lg shadow-sm">
+              <h5 class="font-bold text-base text-white sm:text-lg flex items-center gap-2">
+                <span class="text-white"><i class="fas fa-medal"></i></span> Suitable for Freezer
+              </h5>
+              <p class="text-white text-sm font-medium sm:text-base mt-2">The product is suitable for freezer use .</p>
+            </div>
+
+            <div class="bg-gray-500 hover:bg-gray-600 transition p-3 sm:p-4 rounded-lg shadow-sm">
+              <h5 class="font-bold text-white text-base sm:text-lg flex items-center gap-2">
+                <span class="text-white"><i class="fas fa-medal"></i></span>Recyclable LIDS
+              </h5>
+              <p class="text-white text-sm font-medium sm:text-base mt-2">The lids for these product are made from
+                recycled
+                plastic material .</p>
+            </div>
+          </div>
+
+          <div class="bg-white/90 hover:bg-white transition rounded-lg p-3 sm:p-4 shadow-sm  sm:mt-4">
+            <p class="text-gray-700 text-sm sm:text-base mb-3">
+              Before purchasing a product, it's important to carefully identify your specific needs and requirements.
+              Understanding what you truly need ensures that you make an informed and valuable investment. Begin by
+              considering the functionality of the product: what primary purpose will it serve? Next, focus on design,
+              size, and features that match your lifestyle or professional needs.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Perfect Fit Fade Slider -->
+        <div class="w-full xl:w-1/2 sm:mt-2 lg:mt-64 relative h-[320px] sm:h-[380px] md:h-[420px]">
+          <!-- Slides Container -->
+          <div class="relative w-full h-full overflow-hidden rounded-xl bg-gray-200">
+            <!-- Slide 1 (Active) -->
+            <div
+              class="fade-slide absolute inset-0 flex items-center justify-center opacity-100 transition-opacity duration-500 ease-in-out">
+              <div class="relative w-full h-full">
+                <img src="assests/new-images/images/slider-images/Paper-Cup-Holder-image.png" alt="Product"
+                  class="absolute w-full h-full object-cover p-4">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 class="text-white text-lg font-medium">Paper Cup Holder</h3>
+                  <p class="text-white/80 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="fade-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out">
+              <div class="relative w-full h-full">
+                <img src="assests/new-images/images/slider-images/Cake[1].png" alt="Product"
+                  class="absolute w-full h-full object-cover p-4">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 class="text-white text-lg font-medium">Cake Boxes</h3>
+                  <p class="text-white/80 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="fade-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out">
+              <div class="relative w-full h-full">
+                <img src="assests/new-images/images/slider-images/paper-food-container.png" alt="Product"
+                  class="absolute w-full h-full object-cover p-4">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 class="text-white text-lg font-medium">Paper Food Containers</h3>
+                  <p class="text-white/80 text-sm"></p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div
+              class="fade-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out">
+              <div class="relative w-full h-full">
+                <img src="assests/new-images/images/slider-images/paper-product.png" alt="Product"
+                  class="absolute w-full h-full object-cover p-4">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 class="text-white text-lg font-medium">Paper Product</h3>
+                  <p class="text-white/80 text-sm"></p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 5 -->
+            <div
+              class="fade-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out">
+              <div class="relative w-full h-full">
+                <img src="assests/new-images/images/slider-images/pizza--box.png" alt="Product"
+                  class="absolute w-full h-full object-cover p-4">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 class="text-white text-lg font-medium">Pizza Box</h3>
+                  <p class="text-white/80 text-sm"></p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 6 -->
+            <div
+              class="fade-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out">
+              <div class="relative w-full h-full">
+                <img src="assests/new-images/images/products/PET-jar.png" alt="Product"
+                  class="absolute w-full h-full object-cover p-4">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 class="text-white text-lg font-medium">Pet Jar </h3>
+                  <p class="text-white/80 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Navigation -->
+          <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+            <button class="fade-dot w-3 h-3 rounded-full bg-white/80 hover:bg-white transition-all duration-300"
+              data-index="0"></button>
+            <button class="fade-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
+              data-index="1"></button>
+            <button class="fade-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
+              data-index="2"></button>
+            <button class="fade-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
+              data-index="3"></button>
+            <button class="fade-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
+              data-index="4"></button>
+            <button class="fade-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
+              data-index="5"></button>
+
+          </div>
+
+          <!-- Arrows -->
+          <button
+            class="fade-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-2 rounded-full shadow-md transition-all hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            class="fade-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-2 rounded-full shadow-md transition-all hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- solution section end here -->
+
+
+  <!-- our CLient section start Here-->
+  <section class="overflow-hidden  bg-white mt-6 mx-16">
+    <div class="text-start mb-8">
+      <h3 class="text-3xl font-bold">
+        Our <span class="text-orange-500">Clients</span>
+      </h3>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper w-full px-4 mb-7 ">
+      <div class="swiper-wrapper items-center p-4 mx-7">
+        <!-- Slides -->
+        <div class="swiper-slide flex ">
+          <div
+            class=" flex justify-center items-center text-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl p-3 ">
+            <img src="assests/new-images/images/brand/Haldiram's_Logo_SVG.svg" alt="logo01" class="h-20 w-28 " />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/uncle.jpeg" alt="logo02" class="h-20 w-28" />
+          </div>
+        </div>
+
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/singla's-logo.png" alt="logo03" class="h-20 " />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/mother-bakery-logo.jpeg" alt="logo04" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/GULAB_LOGO.webp" alt="logo05" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/ganesha_logo.jpeg" alt="logo06" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Finger-Licious.png" alt="logo07" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Bread&more.jpeg" alt="logo08" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/big-basket-logo.jpeg" alt="logo09" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Barista-Circle-Logo-PNG.png" alt="logo10" class="h-20 w-28" />
+          </div>
+        </div>
+        <div class="swiper-slide flex w-full h-full ">
+          <div class=" flex justify-center items-center border-[1px] border-gray-300 rounded-[5px] shadow-2xl  p-3 ">
+            <img src="assests/new-images/images/brand/Amar bakery.jpeg" alt="logo11" class="h-20 w-28" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- our CLient section End  Here-->
+
+
+
+
+  <!-- Modern Footer Design start -->
+  <div id="footer-bottom"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-bottom').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+  <!-- Modern Footer Design end -->
+
+
+
+
+  <!-- back to top start-->
+  <button id="backToTopBtn" title="Back to Top"
+    class="hidden fixed bottom-6 right-6 z-50 font-bold text-2xl p-4 rounded-full bg-orange-500 text-white f shadow-md hover:bg-orange-600 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <!-- back to top end -->
+
+
+  <!-- Fixed Brochure Button Start HERE-->
+  <div class="fixed left-0 bottom-20 transform -translate-x-[75px] z-50 -rotate-90 ">
+    <div class="relative writing-vertical ">
+      <!-- Main Button -->
+      <button id="toggleBrochure"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold   px-4 py-3 rounded-full shadow-lg transition duration-300">
+        Download Brochure
+      </button>
+
+      <!-- Dropdown Options -->
+      <div id="brochureDropdown"
+        class="hidden rotate-90 absolute -bottom-40 right-1 bg-white border border-gray-200 shadow-md rounded-md w-56">
+        <a href="" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b"></a>
+        <a href="" class="block px-4 py-3 text-gray-700 hover:bg-gray-100"></a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Brochure Button End HERE-->
+
+
+  <!-- Initialize Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+  <!-- <script type="module" src="/src/main.js"></script> -->
+
+  <script src="assests/js/header.js"></script>
+  <script src="assests/js/getQuote.js"></script>
+  <script src="assests/js/Fixed-Brochure-Button&Back-to-top.js"></script>
+  <script src="assests/js/our-client-slider.js"></script>
+  <script src="assests/js/solution-slider.js"></script>
+  <script src="assests/js/testimonial.js"></script>.
+  <script src="assests/js/our-services.js"></script>
+  <script src="assests/js/certification.js"></script>
+  <script src="assests/js/faq.js"></script>
+  <script src="assests/js/our-product-slider.js"></script>
+  <script src="assests/js/search-bar.js"></script>
+  <script src="assests/js/footer.js"></script>
+
+</body>
+
+</html>
